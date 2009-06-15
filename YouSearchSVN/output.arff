@@ -1,0 +1,152 @@
+@relation 'rectangles-weka.filters.unsupervised.attribute.StringToWordVector-R2-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\"'
+
+@attribute id numeric
+@attribute adsl numeric
+@attribute algebra numeric
+@attribute baby numeric
+@attribute bag numeric
+@attribute ball numeric
+@attribute book numeric
+@attribute cable numeric
+@attribute car numeric
+@attribute cat numeric
+@attribute cloud numeric
+@attribute color numeric
+@attribute computer numeric
+@attribute day numeric
+@attribute desktop numeric
+@attribute digits numeric
+@attribute disco numeric
+@attribute disney numeric
+@attribute dog numeric
+@attribute drink numeric
+@attribute equation numeric
+@attribute evening numeric
+@attribute family numeric
+@attribute fashion numeric
+@attribute flower numeric
+@attribute goffy numeric
+@attribute golf numeric
+@attribute happy numeric
+@attribute hello numeric
+@attribute home numeric
+@attribute hot numeric
+@attribute house numeric
+@attribute human numeric
+@attribute ink numeric
+@attribute intenet numeric
+@attribute internet numeric
+@attribute keyboard numeric
+@attribute kid numeric
+@attribute laptop numeric
+@attribute lights numeric
+@attribute man numeric
+@attribute math numeric
+@attribute men numeric
+@attribute mickey numeric
+@attribute moon numeric
+@attribute mother numeric
+@attribute mouse numeric
+@attribute movie numeric
+@attribute mp3 numeric
+@attribute music numeric
+@attribute night numeric
+@attribute number numeric
+@attribute party numeric
+@attribute pc numeric
+@attribute pen numeric
+@attribute pippo numeric
+@attribute race numeric
+@attribute rain numeric
+@attribute red numeric
+@attribute run numeric
+@attribute school numeric
+@attribute soccer numeric
+@attribute sport numeric
+@attribute student numeric
+@attribute sun numeric
+@attribute swatch numeric
+@attribute tiger numeric
+@attribute time numeric
+@attribute uncle numeric
+@attribute video numeric
+@attribute water numeric
+@attribute wheel numeric
+@attribute when numeric
+@attribute wireless numeric
+@attribute woman numeric
+@attribute women numeric
+@attribute world numeric
+@attribute year numeric
+@attribute zero numeric
+
+@data
+
+{0 1,9 1,18 1,46 1}
+{0 2,28 1,76 1}
+{0 3,24 1,40 1}
+{0 4,47 1,49 1}
+{0 5,25 1,55 1}
+{0 6,57 1,70 1}
+{0 7,30 1,64 1}
+{0 8,3 1,10 1}
+{0 9,45 1,68 1}
+{0 10,13 1,77 1}
+{0 11,8 1,59 1}
+{0 12,56 1,62 1}
+{0 13,22 1,74 1}
+{0 14,27 1,52 1}
+{0 15,6 1,60 1}
+{0 16,37 1,63 1}
+{0 17,67 1,72 1}
+{0 18,41 1,51 1}
+{0 19,33 1,54 1}
+{0 20,49 1,69 1}
+{0 21,9 1,66 1}
+{0 22,36 1,53 1}
+{0 23,1 1,73 1}
+{0 24,16 1,52 1}
+{0 25,48 1,49 1}
+{0 26,22 1,31 1}
+{0 27,4 1,60 1}
+{0 28,5 1,62 1}
+{0 29,2 1,51 1}
+{0 30,23 1,74 1}
+{0 31,18 1,32 1}
+{0 32,9 1,46 1}
+{0 33,14 1,46 1}
+{0 34,12 1,38 1}
+{0 35,29 1,31 1}
+{0 36,11 1,58 1}
+{0 37,65 1,67 1}
+{0 38,19 1,52 1}
+{0 39,27 1,37 1}
+{0 40,61 1,62 1}
+{0 41,44 1,50 1}
+{0 42,50 1,52 1}
+{0 43,17 1,43 1}
+{0 44,43 1,46 1}
+{0 45,9 1,18 1}
+{0 46,40 1,42 1}
+{0 47,74 1,75 1}
+{0 48,39 1,50 1}
+{0 49,16 1,39 1}
+{0 50,21 1,39 1}
+{0 51,31 1,39 1}
+{0 52,51 1,60 1}
+{0 53,60 1,78 1}
+{0 54,41 1,78 1}
+{0 55,2 1,20 1}
+{0 56,20 1,51 1}
+{0 57,15 1,36 1}
+{0 58,22 1,52 1}
+{0 59,16 1,75 1}
+{0 60,16 1,42 1}
+{0 61,12 1,60 1}
+{0 62,1 1,7 1}
+{0 63,1 1,34 1}
+{0 64,35 1,73 1}
+{0 65,26 1,62 1}
+{0 66,26 1,40 1}
+{0 67,8 1,71 1}
+{0 68,46 1,71 1}
