@@ -24,11 +24,11 @@
 
 package weka.associations.tertius;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.Serializable;
 import java.util.ArrayList;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * @author Peter A. Flach

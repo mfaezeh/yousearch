@@ -22,25 +22,25 @@
 
 package weka.associations;
 
-import java.util.PriorityQueue;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Vector;
-import java.util.Enumeration;
 import java.io.Serializable;
-import weka.core.Instances;
-import weka.core.Instance;
-import weka.core.Attribute;
-import weka.core.Utils;
-import weka.core.OptionHandler;
-import weka.core.Option;
-import weka.core.SingleIndex;
-import weka.core.Drawable;
-import weka.core.Capabilities.Capability;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.PriorityQueue;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.CapabilitiesHandler;
+import weka.core.Drawable;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.Option;
+import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
+import weka.core.SingleIndex;
+import weka.core.Utils;
+import weka.core.Capabilities.Capability;
 
 /**
  <!-- globalinfo-start -->

@@ -21,15 +21,15 @@
  */
 package weka.attributeSelection;
 
+import java.io.Serializable;
+import java.util.BitSet;
+import java.util.Hashtable;
+
 import weka.core.FastVector;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.BitSet;
-import java.util.Hashtable;
 
 /**
  * @author Martin Guetlein (martin.guetlein@gmail.com)

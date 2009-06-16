@@ -22,29 +22,28 @@
 
 package  weka.attributeSelection;
 
-import weka.core.Capabilities;
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.Option;
-import weka.core.OptionHandler;
-import weka.core.Utils;
-import weka.core.Capabilities.Capability;
-import weka.core.SelectedTag;
-import weka.core.Tag;
-import weka.classifiers.CostMatrix;
-import weka.core.WeightedInstancesHandler;
-import weka.core.RevisionUtils;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.Serializable;
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Random;
 import java.util.Vector;
-import java.util.ArrayList;
+
+import weka.classifiers.CostMatrix;
+import weka.core.Capabilities;
+import weka.core.Instances;
+import weka.core.Option;
+import weka.core.OptionHandler;
+import weka.core.RevisionUtils;
+import weka.core.SelectedTag;
+import weka.core.Tag;
+import weka.core.Utils;
+import weka.core.WeightedInstancesHandler;
+import weka.core.Capabilities.Capability;
 
 /**
  * Abstract base class for cost-sensitive subset and attribute evaluators.

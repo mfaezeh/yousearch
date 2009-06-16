@@ -22,15 +22,15 @@
 
 package weka.associations;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Hashtable;
+
 import weka.core.ContingencyTables;
 import weka.core.FastVector;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Hashtable;
 
 
 /**

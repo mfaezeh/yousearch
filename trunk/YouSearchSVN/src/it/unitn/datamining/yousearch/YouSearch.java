@@ -1,19 +1,18 @@
 package it.unitn.datamining.yousearch;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
 import com.google.gdata.client.Query.CategoryFilter;
-import com.google.gdata.client.youtube.*;
-
+import com.google.gdata.client.youtube.YouTubeQuery;
+import com.google.gdata.client.youtube.YouTubeService;
 import com.google.gdata.data.Category;
-import com.google.gdata.data.youtube.*;
-
+import com.google.gdata.data.youtube.VideoEntry;
+import com.google.gdata.data.youtube.VideoFeed;
 import com.google.gdata.util.ServiceException;
-
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class YouSearch {
 
@@ -75,7 +74,7 @@ public class YouSearch {
 		try {		
 			System.out.println(query.getFeedUrl()+query.getQueryUri().toString()+"\n");
 			int maxCount = 0;		
-			this.wrt.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result>\n");
+			this.wrt.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result id=\"result\" keyword=\""+this.keyword+"\">\n");
 			for(int i = 1; i<=this.maxTotPageRes; i++){
 				this.currPage = i;
 				this.query.setMaxResults(this.maxResPerPage);

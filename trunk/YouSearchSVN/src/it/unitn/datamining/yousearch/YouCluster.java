@@ -64,7 +64,6 @@ package it.unitn.datamining.yousearch;
   (default 10)
  */
 
-import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;

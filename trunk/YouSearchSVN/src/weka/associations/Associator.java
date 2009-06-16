@@ -22,8 +22,8 @@
 
 package weka.associations;
 
-import weka.core.Instances;
 import weka.core.Capabilities;
+import weka.core.Instances;
 
 public interface Associator {
 

@@ -24,9 +24,9 @@
 
 package weka.associations.tertius;
 
+import weka.associations.Tertius;
 import weka.core.Instance;
 import weka.core.RevisionUtils;
-import weka.associations.Tertius;
 
 /**
  * @author Peter A. Flach

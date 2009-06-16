@@ -22,13 +22,13 @@
 
 package weka.associations.gsp;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+
 import weka.core.FastVector;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
 
 /**
  * Class representing a sequence of elements/itemsets.

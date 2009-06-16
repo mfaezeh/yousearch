@@ -22,11 +22,10 @@
 
 package  weka.attributeSelection;
 
+import java.io.Serializable;
+
 import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
-
-import java.util.BitSet;
-import java.io.Serializable;
 
 /**
  <!-- globalinfo-start -->

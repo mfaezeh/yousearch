@@ -22,12 +22,12 @@
 
 package weka.associations;
 
+import java.io.Serializable;
+import java.util.Hashtable;
+
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
-import java.util.Hashtable;
 
 /**
  * Class for storing an (class) association rule.

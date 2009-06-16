@@ -9,7 +9,7 @@ import net.didion.jwnl.data.IndexWord;
 import net.didion.jwnl.data.POS;
 import net.didion.jwnl.dictionary.Dictionary;
 
-import shef.nlp.wordnet.similarity.*;
+import shef.nlp.wordnet.similarity.SimilarityMeasure;
 
 
 public class Main {
@@ -27,7 +27,7 @@ public class Main {
 			
 			//Create a map to hold the similarity config params
 			Map<String,String> params = new HashMap<String,String>();
-			
+			  
 			//the simType parameter is the class name of the measure to use
 			params.put("simType","shef.nlp.wordnet.similarity.JCn");
 			//this param should be the URL to an infocontent file (if required
@@ -37,8 +37,11 @@ public class Main {
 				SimilarityMeasure simJCn = SimilarityMeasure.newInstance(params);
 				//Get two words from WordNet
 				Dictionary dict = Dictionary.getInstance();		
-				IndexWord word1 = dict.getIndexWord(POS.NOUN,"human");
-				IndexWord word2 = dict.getIndexWord(POS.NOUN,"man");
+				IndexWord word1 = dict.getIndexWord(POS.NOUN,"asdas");
+				IndexWord word2 = dict.getIndexWord(POS.NOUN,"adfff");
+				
+				System.out.println(word2.getSense(1));
+				System.out.println(word2.getSense(1).toString());
 				
 				double sim = simJCn.getSimilarity(word1.getSense(1), word2.getSense(1));
 				System.out.println(sim);

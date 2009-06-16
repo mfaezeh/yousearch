@@ -22,16 +22,16 @@
 
 package weka.associations;
 
+import java.io.Serializable;
+import java.util.Hashtable;
+import java.util.TreeSet;
+
 import weka.core.FastVector;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Statistics;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.Hashtable;
-import java.util.TreeSet;
 
 /**
  * Class implementing the rule generation procedure of the predictive apriori algorithm.

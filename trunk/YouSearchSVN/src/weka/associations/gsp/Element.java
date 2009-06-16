@@ -22,13 +22,13 @@
 
 package weka.associations.gsp;
 
+import java.io.Serializable;
+
 import weka.core.FastVector;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * Class representing an Element, i.e., a set of events/items.
