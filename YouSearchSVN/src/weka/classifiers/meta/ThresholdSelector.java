@@ -22,6 +22,10 @@
 
 package weka.classifiers.meta;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.RandomizableSingleClassifierEnhancer;
 import weka.classifiers.evaluation.EvaluationUtils;
 import weka.classifiers.evaluation.ThresholdCurve;
@@ -39,10 +43,6 @@ import weka.core.SelectedTag;
 import weka.core.Tag;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

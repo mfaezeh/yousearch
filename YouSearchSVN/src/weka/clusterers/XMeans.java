@@ -22,25 +22,6 @@
 
 package weka.clusterers;
 
-import weka.core.AlgVector;
-import weka.core.Capabilities;
-import weka.core.DistanceFunction;
-import weka.core.EuclideanDistance;
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionUtils;
-import weka.core.neighboursearch.KDTree;
-import weka.core.Option;
-import weka.core.OptionHandler;
-import weka.core.TechnicalInformation;
-import weka.core.TechnicalInformationHandler;
-import weka.core.Utils;
-import weka.core.Capabilities.Capability;
-import weka.core.TechnicalInformation.Field;
-import weka.core.TechnicalInformation.Type;
-import weka.filters.Filter;
-import weka.filters.unsupervised.attribute.ReplaceMissingValues;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -50,6 +31,25 @@ import java.io.Reader;
 import java.util.Enumeration;
 import java.util.Random;
 import java.util.Vector;
+
+import weka.core.AlgVector;
+import weka.core.Capabilities;
+import weka.core.DistanceFunction;
+import weka.core.EuclideanDistance;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.Option;
+import weka.core.OptionHandler;
+import weka.core.RevisionUtils;
+import weka.core.TechnicalInformation;
+import weka.core.TechnicalInformationHandler;
+import weka.core.Utils;
+import weka.core.Capabilities.Capability;
+import weka.core.TechnicalInformation.Field;
+import weka.core.TechnicalInformation.Type;
+import weka.core.neighboursearch.KDTree;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.ReplaceMissingValues;
 
 /**
  <!-- globalinfo-start -->

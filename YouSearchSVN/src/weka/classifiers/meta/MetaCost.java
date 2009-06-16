@@ -22,6 +22,14 @@
 
 package weka.classifiers.meta;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.CostMatrix;
 import weka.classifiers.RandomizableSingleClassifierEnhancer;
@@ -39,14 +47,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.util.Enumeration;
-import java.util.Vector;
 
 
 /**

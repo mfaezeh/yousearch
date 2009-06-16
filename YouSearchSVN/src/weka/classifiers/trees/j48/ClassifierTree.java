@@ -22,6 +22,8 @@
 
 package weka.classifiers.trees.j48;
 
+import java.io.Serializable;
+
 import weka.core.Capabilities;
 import weka.core.CapabilitiesHandler;
 import weka.core.Drawable;
@@ -30,8 +32,6 @@ import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.io.Serializable;
 
 /**
  * Class for handling a tree structure used for

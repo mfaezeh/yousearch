@@ -22,10 +22,17 @@
 
 package weka.classifiers.rules;
 
+import java.util.Arrays;
+import java.util.BitSet;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Random;
+import java.util.Vector;
+
+import weka.attributeSelection.ASEvaluation;
 import weka.attributeSelection.ASSearch;
 import weka.attributeSelection.BestFirst;
 import weka.attributeSelection.SubsetEvaluator;
-import weka.attributeSelection.ASEvaluation;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.lazy.IBk;
@@ -47,13 +54,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
-
-import java.util.Arrays;
-import java.util.BitSet;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

@@ -22,7 +22,7 @@
 
 package weka.classifiers;
 
-import weka.core.*;
+import weka.core.Instances;
 
 /**
  * Interface for classifiers that can induce models of growing

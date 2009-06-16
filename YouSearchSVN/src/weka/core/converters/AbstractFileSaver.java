@@ -22,11 +22,6 @@
 
 package weka.core.converters;
 
-import weka.core.FastVector;
-import weka.core.Option;
-import weka.core.OptionHandler;
-import weka.core.Utils;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -34,6 +29,11 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.Enumeration;
+
+import weka.core.FastVector;
+import weka.core.Option;
+import weka.core.OptionHandler;
+import weka.core.Utils;
 
 /**
  * Abstract class for Savers that save to a file

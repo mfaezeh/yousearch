@@ -21,9 +21,6 @@
 
 package weka.core.xml;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -33,6 +30,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.Reader;
 import java.io.Writer;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * This class is a helper class for XML serialization using 

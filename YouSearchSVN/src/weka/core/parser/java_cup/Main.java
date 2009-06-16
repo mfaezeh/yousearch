@@ -32,9 +32,15 @@
 
 package weka.core.parser.java_cup;
 
-import java.util.Enumeration; 
-import java.io.*;
-import weka.core.parser.java_cup.runtime.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
+import java.util.Enumeration;
+
+import weka.core.parser.java_cup.runtime.ComplexSymbolFactory;
 
 /** This class serves as the main driver for the JavaCup system.
  *  It accepts user options and coordinates overall control flow.

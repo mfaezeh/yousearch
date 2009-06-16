@@ -22,12 +22,12 @@
 
 package weka.classifiers.meta.ensembleSelection;
 
+import java.util.Random;
+
 import weka.classifiers.Evaluation;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.util.Random;
 
 /**
  * This class is responsible for the duties of a bag of models. It is designed

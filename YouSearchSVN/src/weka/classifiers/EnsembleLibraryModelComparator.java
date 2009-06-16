@@ -22,11 +22,11 @@
 
 package weka.classifiers;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.Serializable;
 import java.util.Comparator;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * This class is a Comparator for the LibraryModel class. It basically ranks

@@ -21,6 +21,14 @@
 
 package weka.core.neighboursearch;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.List;
+import java.util.Vector;
+
 import weka.core.DistanceFunction;
 import weka.core.EuclideanDistance;
 import weka.core.Instance;
@@ -35,14 +43,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.core.converters.CSVLoader;
 import weka.core.neighboursearch.covertrees.Stack;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

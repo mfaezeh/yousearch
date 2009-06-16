@@ -22,12 +22,11 @@
 
 package weka.datagenerators;
 
-import weka.core.Option;
-import weka.core.Utils;
-import weka.datagenerators.DataGenerator;
-
 import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.Option;
+import weka.core.Utils;
 
 /** 
  * Abstract class for data generators for regression classifiers. <p/>

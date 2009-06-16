@@ -22,14 +22,14 @@
 
 package weka.clusterers;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.Option;
 import weka.core.OptionHandler;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  * Meta-clusterer for enhancing a base clusterer.

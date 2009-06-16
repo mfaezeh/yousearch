@@ -22,15 +22,15 @@
 
 package weka.estimators;
 
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
  
 /** 
  * Contains static utility functions for Estimators.<p>

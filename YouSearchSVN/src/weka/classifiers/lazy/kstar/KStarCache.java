@@ -24,10 +24,10 @@
 
 package weka.classifiers.lazy.kstar;
 
+import java.io.Serializable;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * A class representing the caching system used to keep track of each attribute

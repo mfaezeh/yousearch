@@ -22,12 +22,12 @@
 
 package weka.core.xml;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.lang.reflect.Method;
 
 import org.w3c.dom.Element;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 
 /**

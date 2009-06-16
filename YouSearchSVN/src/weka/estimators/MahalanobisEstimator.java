@@ -22,11 +22,11 @@
 
 package weka.estimators;
 
-import weka.core.Capabilities.Capability;
-import weka.core.matrix.Matrix;
 import weka.core.Capabilities;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
+import weka.core.Capabilities.Capability;
+import weka.core.matrix.Matrix;
 
 /** 
  * Simple probability estimator that places a single normal distribution

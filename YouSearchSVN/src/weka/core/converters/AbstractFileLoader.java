@@ -21,15 +21,15 @@
 
 package weka.core.converters;
 
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.Utils;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.zip.GZIPInputStream;
+
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.Utils;
 
 
 /**

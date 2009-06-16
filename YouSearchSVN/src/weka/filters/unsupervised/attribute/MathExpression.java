@@ -22,6 +22,11 @@
 
 package weka.filters.unsupervised.attribute;
 
+import java.io.ByteArrayInputStream;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Vector;
+
 import weka.core.AttributeStats;
 import weka.core.Capabilities;
 import weka.core.Instance;
@@ -38,11 +43,6 @@ import weka.core.mathematicalexpression.Scanner;
 import weka.core.parser.java_cup.runtime.DefaultSymbolFactory;
 import weka.core.parser.java_cup.runtime.SymbolFactory;
 import weka.filters.UnsupervisedFilter;
-
-import java.io.ByteArrayInputStream;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

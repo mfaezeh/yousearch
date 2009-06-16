@@ -22,10 +22,6 @@
 
 package weka.experiment;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-
 import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
@@ -39,6 +35,10 @@ import java.sql.Types;
 import java.util.Properties;
 import java.util.StringTokenizer;
 import java.util.Vector;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
 
 /**
  * DatabaseUtils provides utility functions for accessing the experiment

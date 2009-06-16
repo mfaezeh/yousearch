@@ -22,6 +22,9 @@
 
 package weka.classifiers.mi;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.SingleClassifierEnhancer;
 import weka.core.Capabilities;
 import weka.core.Instance;
@@ -40,9 +43,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.MultiInstanceToPropositional;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

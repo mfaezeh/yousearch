@@ -23,21 +23,21 @@
 
 package weka.experiment;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.Enumeration;
+
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.RevisionUtils;
-import weka.core.Utils;
 import weka.core.TechnicalInformation;
-import weka.core.TechnicalInformation.Type;
-import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformationHandler;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.Enumeration;
+import weka.core.Utils;
+import weka.core.TechnicalInformation.Field;
+import weka.core.TechnicalInformation.Type;
 
 /**
  * Behaves the same as PairedTTester, only it uses the corrected

@@ -21,13 +21,13 @@
 
 package weka.core.neighboursearch.covertrees;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * Class implementing a stack.

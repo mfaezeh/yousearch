@@ -20,6 +20,9 @@
 
 package weka.classifiers.functions;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.functions.pace.ChisqMixture;
 import weka.classifiers.functions.pace.MixtureDistribution;
@@ -44,9 +47,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.core.matrix.DoubleVector;
 import weka.core.matrix.IntVector;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

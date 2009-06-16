@@ -23,18 +23,18 @@
 
 package weka.experiment;
 
-import weka.core.Option;
-import weka.core.OptionHandler;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.Option;
+import weka.core.OptionHandler;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
 
 /**
  <!-- globalinfo-start -->

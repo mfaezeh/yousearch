@@ -21,13 +21,13 @@
 
 package weka.core.neighboursearch;
 
-import weka.core.AdditionalMeasureProducer;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.Serializable;
 import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.AdditionalMeasureProducer;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * The class that measures the performance of a nearest

@@ -22,9 +22,9 @@
 
 package weka.classifiers.trees.j48;
 
-import weka.core.RevisionHandler;
-
 import java.io.Serializable;
+
+import weka.core.RevisionHandler;
 
 /**
  * Abstract class for computing splitting criteria

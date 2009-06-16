@@ -22,6 +22,11 @@
 
 package weka.classifiers.trees;
 
+import java.util.Arrays;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Evaluation;
 import weka.classifiers.RandomizableClassifier;
 import weka.core.AdditionalMeasureProducer;
@@ -38,11 +43,6 @@ import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.core.matrix.Matrix;
-
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

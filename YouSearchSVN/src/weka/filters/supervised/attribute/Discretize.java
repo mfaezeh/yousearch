@@ -23,6 +23,9 @@
 
 package weka.filters.supervised.attribute;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.ContingencyTables;
@@ -44,9 +47,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.SupervisedFilter;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

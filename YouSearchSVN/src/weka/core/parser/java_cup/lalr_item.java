@@ -33,7 +33,6 @@
 package weka.core.parser.java_cup;
 
 import java.util.Stack;
-import java.util.Enumeration;
 
 /** This class represents an LALR item. Each LALR item consists of 
  *  a production, a "dot" at a position within that production, and

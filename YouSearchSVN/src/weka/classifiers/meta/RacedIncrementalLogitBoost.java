@@ -22,6 +22,11 @@
 
 package weka.classifiers.meta;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.RandomizableSingleClassifierEnhancer;
 import weka.classifiers.UpdateableClassifier;
@@ -39,11 +44,6 @@ import weka.core.Tag;
 import weka.core.Utils;
 import weka.core.WeightedInstancesHandler;
 import weka.core.Capabilities.Capability;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

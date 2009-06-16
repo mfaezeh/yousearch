@@ -16,13 +16,13 @@
 
 package weka.classifiers.functions.supportVector;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.Utils;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  * Base class for RBFKernel and PolyKernel that implements a simple LRU.

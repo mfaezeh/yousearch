@@ -22,10 +22,6 @@
 
 package weka.classifiers;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.gui.ensembleLibraryEditor.LibrarySerialization;
-
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.io.BufferedReader;
@@ -42,6 +38,10 @@ import java.util.Vector;
 
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.gui.ensembleLibraryEditor.LibrarySerialization;
 
 /** 
  * This class represents a library of classifiers.  This class 

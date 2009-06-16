@@ -23,7 +23,10 @@
 
 package weka.classifiers.trees.j48;
 
-import weka.core.*;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
 
 /**
  * Class implementing a split for nodes added to a tree during grafting.

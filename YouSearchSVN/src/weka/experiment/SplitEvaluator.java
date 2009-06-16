@@ -23,8 +23,9 @@
 
 package weka.experiment;
 
-import weka.core.Instances;
 import java.io.Serializable;
+
+import weka.core.Instances;
 
 /**
  * Interface to objects able to generate a fixed set of results for

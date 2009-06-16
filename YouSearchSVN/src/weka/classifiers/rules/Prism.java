@@ -22,6 +22,9 @@
 
 package weka.classifiers.rules;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+
 import weka.classifiers.Classifier;
 import weka.core.Attribute;
 import weka.core.Capabilities;
@@ -34,9 +37,6 @@ import weka.core.TechnicalInformationHandler;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.io.Serializable;
-import java.util.Enumeration;
 
 /**
  <!-- globalinfo-start -->

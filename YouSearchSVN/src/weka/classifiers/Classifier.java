@@ -22,6 +22,10 @@
 
 package weka.classifiers;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.CapabilitiesHandler;
@@ -32,10 +36,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.SerializedObject;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  * Abstract classifier. All schemes for numeric or nominal prediction in

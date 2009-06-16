@@ -22,14 +22,14 @@
 
 package weka.core.converters;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import weka.core.Capabilities;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionUtils;
 import weka.core.Capabilities.Capability;
-
-import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * Writes to a destination in arff text format. <p/>

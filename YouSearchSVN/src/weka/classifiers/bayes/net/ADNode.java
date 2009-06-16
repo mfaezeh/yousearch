@@ -22,6 +22,9 @@
 
 package weka.classifiers.bayes.net;
 
+import java.io.FileReader;
+import java.io.Serializable;
+
 import weka.core.FastVector;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -31,9 +34,6 @@ import weka.core.TechnicalInformation;
 import weka.core.TechnicalInformationHandler;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.io.FileReader;
-import java.io.Serializable;
 
 /**
  * The ADNode class implements the ADTree datastructure which increases

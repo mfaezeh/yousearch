@@ -22,11 +22,11 @@
 
 package weka.core;
 
-import weka.core.neighboursearch.PerformanceStats;
-
 import java.io.Serializable;
 import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.neighboursearch.PerformanceStats;
 
 /**
  * Represents the abstract ancestor for normalizable distance functions, like

@@ -21,9 +21,6 @@
 
 package weka.core.xml;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -35,6 +32,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * This class enables one to change the UID of a serialized object and therefore

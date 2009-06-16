@@ -22,6 +22,23 @@
 
 package weka.classifiers;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.io.Reader;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.zip.GZIPInputStream;
+import java.util.zip.GZIPOutputStream;
+
 import weka.classifiers.evaluation.NominalPrediction;
 import weka.classifiers.evaluation.ThresholdCurve;
 import weka.classifiers.xml.XMLClassifier;
@@ -44,23 +61,6 @@ import weka.core.xml.XMLOptions;
 import weka.core.xml.XMLSerialization;
 import weka.estimators.Estimator;
 import weka.estimators.KernelEstimator;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.zip.GZIPInputStream;
-import java.util.zip.GZIPOutputStream;
 
 /**
  * Class for evaluating machine learning models. <p/>

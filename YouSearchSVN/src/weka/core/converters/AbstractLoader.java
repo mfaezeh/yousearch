@@ -22,9 +22,12 @@
 
 package weka.core.converters;
 
-import weka.core.Instances;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+
 import weka.core.Instance;
-import java.io.*;
+import weka.core.Instances;
 
 /**
  * Abstract class gives default implementation of setSource 

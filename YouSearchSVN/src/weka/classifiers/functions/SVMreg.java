@@ -22,6 +22,9 @@
 
 package weka.classifiers.functions;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.functions.supportVector.Kernel;
 import weka.classifiers.functions.supportVector.PolyKernel;
@@ -48,9 +51,6 @@ import weka.filters.unsupervised.attribute.NominalToBinary;
 import weka.filters.unsupervised.attribute.Normalize;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
 import weka.filters.unsupervised.attribute.Standardize;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

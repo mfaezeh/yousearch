@@ -22,6 +22,11 @@
 
 package weka.core.converters;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Enumeration;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -32,11 +37,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Enumeration;
 
 /**
  <!-- globalinfo-start -->

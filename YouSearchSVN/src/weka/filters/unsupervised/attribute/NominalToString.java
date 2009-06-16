@@ -22,6 +22,9 @@
 
 package weka.filters.unsupervised.attribute;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -29,17 +32,13 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.OptionHandler;
-import weka.core.RevisionUtils;
-import weka.core.SingleIndex;
 import weka.core.Range;
+import weka.core.RevisionUtils;
 import weka.core.UnsupportedAttributeTypeException;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.filters.Filter;
 import weka.filters.UnsupervisedFilter;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

@@ -23,6 +23,14 @@
 
 package weka.clusterers;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.text.DecimalFormat;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Vector;
+
 import weka.clusterers.forOPTICSAndDBScan.DataObjects.DataObject;
 import weka.clusterers.forOPTICSAndDBScan.Databases.Database;
 import weka.core.Capabilities;
@@ -39,14 +47,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.text.DecimalFormat;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

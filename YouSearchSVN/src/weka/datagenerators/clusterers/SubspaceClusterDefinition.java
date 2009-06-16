@@ -22,6 +22,11 @@
 
 package weka.datagenerators.clusterers;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.StringTokenizer;
+import java.util.Vector;
+
 import weka.core.Option;
 import weka.core.Range;
 import weka.core.RevisionUtils;
@@ -29,11 +34,6 @@ import weka.core.SelectedTag;
 import weka.core.Utils;
 import weka.datagenerators.ClusterDefinition;
 import weka.datagenerators.ClusterGenerator;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.StringTokenizer;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

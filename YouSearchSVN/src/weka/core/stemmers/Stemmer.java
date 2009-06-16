@@ -22,9 +22,9 @@
 
 package weka.core.stemmers;
 
-import weka.core.RevisionHandler;
-
 import java.io.Serializable;
+
+import weka.core.RevisionHandler;
 
 /**
  * Interface for all stemming algorithms.

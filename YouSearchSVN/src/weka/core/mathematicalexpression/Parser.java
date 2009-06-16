@@ -38,9 +38,15 @@
 
 package weka.core.mathematicalexpression;
 
-import weka.core.parser.java_cup.runtime.*;
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.FileReader;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Iterator;
+
+import weka.core.parser.java_cup.runtime.DefaultSymbolFactory;
+import weka.core.parser.java_cup.runtime.SymbolFactory;
 
 /** CUP v0.11a beta 20060608 generated parser.
   * @version Thu May 15 13:13:25 NZST 2008

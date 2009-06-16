@@ -22,14 +22,14 @@
 
 package weka.classifiers.evaluation;
 
+import java.util.Random;
+
 import weka.classifiers.Classifier;
 import weka.core.FastVector;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.util.Random;
 
 /**
  * Contains utility functions for generating lists of predictions in 

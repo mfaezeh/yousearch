@@ -23,8 +23,9 @@
 
 package weka.filters.unsupervised.instance.subsetbyexpression;
 
+import java.io.InputStream;
+
 import weka.core.parser.java_cup.runtime.SymbolFactory;
-import java.io.*;
 
 /**
  * A scanner for evaluating whether an Instance is to be included in a subset

@@ -22,12 +22,12 @@
 
 package weka.classifiers.misc.monotone;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /** 
  * Implementation of a simple wrapper class for the <code> Enumeration </code>

@@ -22,6 +22,13 @@
 
 package  weka.clusterers;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.core.Drawable;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -34,13 +41,6 @@ import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  * Class for evaluating clustering models.<p/>

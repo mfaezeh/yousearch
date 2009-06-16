@@ -22,12 +22,12 @@
 
 package weka.classifiers.bayes.blr;
 
+import java.io.Serializable;
+
 import weka.classifiers.bayes.BayesianLogisticRegression;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
-
-import java.io.Serializable;
 
 /**
  * This is an interface to plug various priors into

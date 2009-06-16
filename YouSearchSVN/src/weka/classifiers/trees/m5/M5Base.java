@@ -22,6 +22,10 @@
 
 package weka.classifiers.trees.m5;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.functions.LinearRegression;
 import weka.core.AdditionalMeasureProducer;
@@ -39,10 +43,6 @@ import weka.filters.Filter;
 import weka.filters.supervised.attribute.NominalToBinary;
 import weka.filters.unsupervised.attribute.RemoveUseless;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  * M5Base. Implements base routines

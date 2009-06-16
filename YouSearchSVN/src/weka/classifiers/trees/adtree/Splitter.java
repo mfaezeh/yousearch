@@ -22,11 +22,11 @@
 
 package weka.classifiers.trees.adtree;
 
+import java.io.Serializable;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
-
-import java.io.Serializable;
 
 /**
  * Abstract class representing a splitter node in an alternating tree.

@@ -21,12 +21,11 @@
 
 package weka.core.tokenizers;
 
-import weka.core.Option;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-
 import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.Option;
+import weka.core.Utils;
 
 /**
  * Abstract superclass for tokenizers that take characters as delimiters.

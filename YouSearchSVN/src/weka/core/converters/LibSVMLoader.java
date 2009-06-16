@@ -22,12 +22,6 @@
 
 package weka.core.converters;
 
-import weka.core.Attribute;
-import weka.core.FastVector;
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionUtils;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -37,6 +31,12 @@ import java.io.Reader;
 import java.net.URL;
 import java.util.StringTokenizer;
 import java.util.Vector;
+
+import weka.core.Attribute;
+import weka.core.FastVector;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionUtils;
 
 /**
  <!-- globalinfo-start -->

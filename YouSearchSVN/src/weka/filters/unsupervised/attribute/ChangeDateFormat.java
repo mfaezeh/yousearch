@@ -23,6 +23,11 @@
 
 package weka.filters.unsupervised.attribute;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -38,11 +43,6 @@ import weka.core.Capabilities.Capability;
 import weka.filters.Filter;
 import weka.filters.StreamableFilter;
 import weka.filters.UnsupervisedFilter;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

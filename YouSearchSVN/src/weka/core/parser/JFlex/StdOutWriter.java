@@ -21,8 +21,9 @@
 package weka.core.parser.JFlex;
 
 
-import java.io.*;
 import java.awt.TextArea;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 
 
 /**

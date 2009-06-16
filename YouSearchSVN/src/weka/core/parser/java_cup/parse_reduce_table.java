@@ -32,7 +32,6 @@
 
 package weka.core.parser.java_cup;
 
-import java.util.Enumeration;
 
 /** This class represents the complete "reduce-goto" table of the parser.
  *  It has one row for each state in the parse machines, and a column for

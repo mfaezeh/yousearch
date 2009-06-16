@@ -22,21 +22,26 @@
 
 package weka.core.converters;
 
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.FastVector;
-import weka.core.Attribute;
-import weka.core.OptionHandler;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-import weka.core.Option;
 import java.io.IOException;
-import java.sql.*;
+import java.sql.DatabaseMetaData;
+import java.sql.Date;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Properties;
 import java.util.StringTokenizer;
-import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.Attribute;
+import weka.core.FastVector;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.Option;
+import weka.core.OptionHandler;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
 
 /**
  <!-- globalinfo-start -->

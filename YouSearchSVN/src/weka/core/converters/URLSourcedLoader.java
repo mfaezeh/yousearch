@@ -21,7 +21,6 @@
  */
 package weka.core.converters;
 
-import java.net.URL;
 
 /**
  * Interface to a loader that can load from a http url

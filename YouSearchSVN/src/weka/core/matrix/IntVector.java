@@ -21,10 +21,10 @@
 
 package weka.core.matrix;
 
+import java.util.Arrays;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.util.Arrays;
 
 /**
  * A vector specialized on integers.

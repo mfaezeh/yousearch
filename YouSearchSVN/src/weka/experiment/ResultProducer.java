@@ -23,8 +23,9 @@
 
 package weka.experiment;
 
-import weka.core.Instances;
 import java.io.Serializable;
+
+import weka.core.Instances;
 
 /**
  * This interface defines the methods required for an object 

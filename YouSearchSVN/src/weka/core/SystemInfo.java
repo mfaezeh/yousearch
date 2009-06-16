@@ -21,13 +21,13 @@
  */
 package weka.core;
 
-import weka.gui.LookAndFeel;
-
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Properties;
 import java.util.Vector;
+
+import weka.gui.LookAndFeel;
 
 /**
  * This class prints some information about the system setup, like Java

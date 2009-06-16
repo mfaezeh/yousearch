@@ -21,11 +21,11 @@
  */
 package weka.classifiers.bayes.net;
 
+import java.io.Serializable;
+
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * Helper class for Bayes Network classifiers. Provides datastructures to

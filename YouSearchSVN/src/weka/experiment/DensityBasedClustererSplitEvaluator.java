@@ -23,10 +23,13 @@
 
 package weka.experiment;
 
-import weka.clusterers.ClusterEvaluation;
-import weka.clusterers.Clusterer;
+import java.io.ObjectStreamClass;
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.clusterers.AbstractClusterer;
-import weka.clusterers.AbstractDensityBasedClusterer;
+import weka.clusterers.ClusterEvaluation;
 import weka.clusterers.DensityBasedClusterer;
 import weka.clusterers.EM;
 import weka.core.AdditionalMeasureProducer;
@@ -38,11 +41,6 @@ import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
-
-import java.io.ObjectStreamClass;
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  * A SplitEvaluator that produces results for a density based clusterer.

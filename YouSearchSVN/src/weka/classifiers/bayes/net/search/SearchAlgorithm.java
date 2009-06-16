@@ -21,16 +21,16 @@
  */
 package weka.classifiers.bayes.net.search;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.bayes.BayesNet;
 import weka.classifiers.bayes.net.ParentSet;
 import weka.core.Instances;
 import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  * This is the base class for all search algorithms for learning Bayes networks.

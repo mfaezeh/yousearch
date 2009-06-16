@@ -25,9 +25,9 @@ package weka.estimators;
 import java.util.Random;
 import java.util.Vector;
 
-import weka.core.matrix.Matrix;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
+import weka.core.matrix.Matrix;
 
 /** 
  * Conditional probability estimator for a numeric domain conditional upon

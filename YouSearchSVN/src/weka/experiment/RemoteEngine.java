@@ -23,10 +23,6 @@
 
 package weka.experiment;
 
-import weka.core.Queue;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.net.InetAddress;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -36,6 +32,10 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Enumeration;
 import java.util.Hashtable;
+
+import weka.core.Queue;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * A general purpose server for executing Task objects sent via RMI.

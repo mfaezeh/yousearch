@@ -23,15 +23,15 @@
 
 package weka.experiment;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.zip.GZIPOutputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * OutputZipper writes output to either gzipped files or to a

@@ -24,6 +24,7 @@ package weka.filters.unsupervised.attribute;
 
 import java.util.Enumeration;
 import java.util.Vector;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Option;

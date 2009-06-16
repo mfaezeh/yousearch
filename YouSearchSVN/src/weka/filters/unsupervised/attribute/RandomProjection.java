@@ -22,6 +22,10 @@
 
 package weka.filters.unsupervised.attribute;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -40,10 +44,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.UnsupervisedFilter;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

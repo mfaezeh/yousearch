@@ -23,10 +23,10 @@
 
 package weka.clusterers.forOPTICSAndDBScan.Utils;
 
+import java.util.ArrayList;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.util.ArrayList;
 
 /**
  * <p>

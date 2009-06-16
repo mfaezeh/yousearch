@@ -22,13 +22,6 @@
 
 package weka.classifiers.meta.ensembleSelection;
 
-import weka.classifiers.Classifier;
-import weka.classifiers.EnsembleLibraryModel;
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -40,6 +33,13 @@ import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
 import java.util.zip.Adler32;
+
+import weka.classifiers.Classifier;
+import weka.classifiers.EnsembleLibraryModel;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
 
 /**
  * This class represents a library model that is used for EnsembleSelection. At

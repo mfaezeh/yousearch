@@ -21,10 +21,10 @@
 
 package weka.core.neighboursearch;
 
-import weka.core.RevisionUtils;
-
 import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.RevisionUtils;
 
 /**
  * The class that measures the performance of a tree based 

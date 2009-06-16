@@ -22,6 +22,13 @@
 
 package weka.core.converters;
 
+import java.io.File;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.Enumeration;
+import java.util.Properties;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -32,13 +39,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.io.File;
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.Enumeration;
-import java.util.Properties;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

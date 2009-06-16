@@ -22,17 +22,6 @@
 
 package weka.classifiers.bayes.net;
 
-import weka.classifiers.bayes.BayesNet;
-import weka.classifiers.bayes.net.estimate.DiscreteEstimatorBayes;
-import weka.core.FastVector;
-import weka.core.Instances;
-import weka.core.RevisionUtils;
-import weka.core.TechnicalInformation;
-import weka.core.TechnicalInformation.Type;
-import weka.core.TechnicalInformation.Field;
-import weka.core.TechnicalInformationHandler;
-import weka.estimators.Estimator;
-
 import java.io.File;
 import java.io.StringReader;
 import java.util.StringTokenizer;
@@ -44,6 +33,17 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import weka.classifiers.bayes.BayesNet;
+import weka.classifiers.bayes.net.estimate.DiscreteEstimatorBayes;
+import weka.core.FastVector;
+import weka.core.Instances;
+import weka.core.RevisionUtils;
+import weka.core.TechnicalInformation;
+import weka.core.TechnicalInformationHandler;
+import weka.core.TechnicalInformation.Field;
+import weka.core.TechnicalInformation.Type;
+import weka.estimators.Estimator;
 
 /**
  <!-- globalinfo-start -->

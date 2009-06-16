@@ -22,6 +22,13 @@
 
 package weka.classifiers.misc.monotone;
 
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Random;
+
 import weka.classifiers.Classifier;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -29,13 +36,6 @@ import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.estimators.DiscreteEstimator;
-
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Random;
 
 /**
  * This class contains some methods for working with objects of 

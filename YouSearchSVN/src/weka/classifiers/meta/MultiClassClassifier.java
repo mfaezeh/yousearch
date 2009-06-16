@@ -22,6 +22,11 @@
 
 package weka.classifiers.meta;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.RandomizableSingleClassifierEnhancer;
 import weka.classifiers.rules.ZeroR;
@@ -42,11 +47,6 @@ import weka.core.Capabilities.Capability;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.MakeIndicator;
 import weka.filters.unsupervised.instance.RemoveWithValues;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

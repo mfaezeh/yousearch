@@ -22,11 +22,11 @@
 
 package weka.core.converters;
 
-import weka.core.RevisionUtils;
-import weka.experiment.DatabaseUtils;
-
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
+
+import weka.core.RevisionUtils;
+import weka.experiment.DatabaseUtils;
 
 /**
  * Connects to a database.

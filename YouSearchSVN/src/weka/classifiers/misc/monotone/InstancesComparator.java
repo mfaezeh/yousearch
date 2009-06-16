@@ -22,11 +22,11 @@
 
 package weka.classifiers.misc.monotone;
 
+import java.util.Comparator;
+
 import weka.core.Instance;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.util.Comparator;
 
 /**
  * Class to compare instances with respect to a given attribute, indicated

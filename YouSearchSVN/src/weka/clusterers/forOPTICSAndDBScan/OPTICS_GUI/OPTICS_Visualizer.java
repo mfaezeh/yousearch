@@ -23,10 +23,6 @@
 
 package weka.clusterers.forOPTICSAndDBScan.OPTICS_GUI;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.gui.LookAndFeel;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -79,6 +75,10 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.TableColumn;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.gui.LookAndFeel;
 
 /**
  * <p>

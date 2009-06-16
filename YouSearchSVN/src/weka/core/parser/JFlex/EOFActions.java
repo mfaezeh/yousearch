@@ -20,7 +20,9 @@
 
 package weka.core.parser.JFlex;
 
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Vector;
 
 
 /**

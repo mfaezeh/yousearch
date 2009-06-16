@@ -22,6 +22,10 @@
 
 package weka.classifiers.bayes.net.estimate;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.bayes.BayesNet;
 import weka.core.Instance;
 import weka.core.Option;
@@ -29,10 +33,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

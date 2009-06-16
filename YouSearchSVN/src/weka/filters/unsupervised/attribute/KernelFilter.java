@@ -22,6 +22,11 @@
 
 package weka.filters.unsupervised.attribute;
 
+import java.io.File;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Vector;
+
 import weka.classifiers.functions.supportVector.Kernel;
 import weka.classifiers.functions.supportVector.PolyKernel;
 import weka.classifiers.functions.supportVector.RBFKernel;
@@ -46,11 +51,6 @@ import weka.filters.AllFilter;
 import weka.filters.Filter;
 import weka.filters.SimpleBatchFilter;
 import weka.filters.UnsupervisedFilter;
-
-import java.io.File;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

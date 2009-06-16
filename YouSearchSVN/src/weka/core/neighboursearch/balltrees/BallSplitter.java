@@ -21,15 +21,15 @@
 
 package weka.core.neighboursearch.balltrees;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.EuclideanDistance;
 import weka.core.Instances;
 import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  * Abstract class for splitting a ball tree's BallNode.

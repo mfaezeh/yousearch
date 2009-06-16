@@ -22,14 +22,14 @@
 
 package weka.datagenerators;
 
+import java.io.Serializable;
+
 import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.io.Serializable;
 
 /** 
  * Class to represent a test. <br/>

@@ -22,6 +22,9 @@
 
 package weka.core.neighboursearch;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.DistanceFunction;
 import weka.core.EuclideanDistance;
 import weka.core.Instance;
@@ -36,9 +39,6 @@ import weka.core.TechnicalInformation.Type;
 import weka.core.neighboursearch.kdtrees.KDTreeNode;
 import weka.core.neighboursearch.kdtrees.KDTreeNodeSplitter;
 import weka.core.neighboursearch.kdtrees.SlidingMidPointOfWidestSide;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

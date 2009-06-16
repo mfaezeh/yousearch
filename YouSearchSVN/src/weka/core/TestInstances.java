@@ -21,13 +21,13 @@
 
 package weka.core;
 
-import weka.core.Capabilities.Capability;
-
 import java.io.Serializable;
 import java.util.Enumeration;
 import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.Vector;
+
+import weka.core.Capabilities.Capability;
 
 /**
  * Generates artificial datasets for testing. In case of Multi-Instance data

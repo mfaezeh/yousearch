@@ -21,6 +21,9 @@
 
 package weka.filters.unsupervised.attribute;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -36,9 +39,6 @@ import weka.core.matrix.EigenvalueDecomposition;
 import weka.core.matrix.Matrix;
 import weka.filters.Filter;
 import weka.filters.UnsupervisedFilter;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

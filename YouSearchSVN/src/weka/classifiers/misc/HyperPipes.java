@@ -22,6 +22,8 @@
 
 package weka.classifiers.misc;
 
+import java.io.Serializable;
+
 import weka.classifiers.Classifier;
 import weka.core.Attribute;
 import weka.core.Capabilities;
@@ -32,8 +34,6 @@ import weka.core.RevisionUtils;
 import weka.core.UnsupportedAttributeTypeException;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.io.Serializable;
 
 /**
  <!-- globalinfo-start -->

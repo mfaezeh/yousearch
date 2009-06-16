@@ -22,12 +22,12 @@
 
 package weka.classifiers.misc.monotone;
 
+import java.io.Serializable;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.estimators.DiscreteEstimator;
-
-import java.io.Serializable;
 
 /**
  * This class represents a discrete probability distribution 

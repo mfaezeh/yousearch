@@ -22,6 +22,9 @@
  */
 package weka.classifiers.functions;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.clusterers.MakeDensityBasedClusterer;
 import weka.clusterers.SimpleKMeans;
@@ -36,9 +39,6 @@ import weka.core.Utils;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.ClusterMembership;
 import weka.filters.unsupervised.attribute.Standardize;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

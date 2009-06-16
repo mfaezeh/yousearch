@@ -23,11 +23,11 @@
 
 package weka.clusterers.forOPTICSAndDBScan.OPTICS_GUI;
 
+import java.io.Serializable;
+
 import weka.core.FastVector;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * <p>

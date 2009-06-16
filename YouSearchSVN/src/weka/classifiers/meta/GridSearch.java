@@ -21,6 +21,18 @@
 
 package weka.classifiers.meta;
 
+import java.beans.PropertyDescriptor;
+import java.io.File;
+import java.io.Serializable;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.RandomizableSingleClassifierEnhancer;
@@ -47,18 +59,6 @@ import weka.filters.supervised.attribute.PLSFilter;
 import weka.filters.unsupervised.attribute.MathExpression;
 import weka.filters.unsupervised.attribute.NumericCleaner;
 import weka.filters.unsupervised.instance.Resample;
-
-import java.beans.PropertyDescriptor;
-import java.io.File;
-import java.io.Serializable;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

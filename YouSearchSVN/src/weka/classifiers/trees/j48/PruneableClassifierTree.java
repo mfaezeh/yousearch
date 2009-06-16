@@ -22,13 +22,13 @@
 
 package weka.classifiers.trees.j48;
 
+import java.util.Random;
+
 import weka.core.Capabilities;
 import weka.core.Instances;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.util.Random;
 
 /**
  * Class for handling a tree structure that can

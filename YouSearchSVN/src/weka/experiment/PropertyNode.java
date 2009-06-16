@@ -22,13 +22,13 @@
 
 package weka.experiment;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.beans.IntrospectionException;
 import java.beans.PropertyDescriptor;
 import java.io.IOException;
 import java.io.Serializable;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * Stores information on a property of an object: the class of the

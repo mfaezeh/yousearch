@@ -22,7 +22,7 @@
 
 package weka.classifiers;
 
-import weka.core.*;
+import weka.core.Instance;
 
 /**
  * Interface to incremental classification models that can learn using

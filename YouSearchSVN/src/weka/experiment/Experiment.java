@@ -23,20 +23,6 @@
 
 package weka.experiment;
 
-import weka.core.AdditionalMeasureProducer;
-import weka.core.FastVector;
-import weka.core.Instances;
-import weka.core.Option;
-import weka.core.OptionHandler;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-import weka.core.converters.AbstractFileLoader;
-import weka.core.converters.ConverterUtils;
-import weka.core.xml.KOML;
-import weka.core.xml.XMLOptions;
-import weka.experiment.xml.XMLExperiment;
-
 import java.beans.PropertyDescriptor;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -52,6 +38,20 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 import javax.swing.DefaultListModel;
+
+import weka.core.AdditionalMeasureProducer;
+import weka.core.FastVector;
+import weka.core.Instances;
+import weka.core.Option;
+import weka.core.OptionHandler;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
+import weka.core.converters.AbstractFileLoader;
+import weka.core.converters.ConverterUtils;
+import weka.core.xml.KOML;
+import weka.core.xml.XMLOptions;
+import weka.experiment.xml.XMLExperiment;
 
 /**
  * Holds all the necessary configuration information for a standard

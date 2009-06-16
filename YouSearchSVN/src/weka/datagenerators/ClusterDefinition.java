@@ -22,12 +22,12 @@
 
 package weka.datagenerators;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+
 import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
 
 /**
  * Ancestor to all ClusterDefinitions, i.e., subclasses that handle their

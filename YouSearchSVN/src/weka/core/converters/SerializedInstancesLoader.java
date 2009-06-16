@@ -22,14 +22,14 @@
 
 package weka.core.converters;
 
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionUtils;
-
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
+
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionUtils;
 
 /**
  <!-- globalinfo-start -->

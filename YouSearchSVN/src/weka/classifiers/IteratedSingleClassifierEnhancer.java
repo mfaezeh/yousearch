@@ -22,12 +22,12 @@
 
 package weka.classifiers;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.Utils;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  * Abstract utility class for handling settings common to

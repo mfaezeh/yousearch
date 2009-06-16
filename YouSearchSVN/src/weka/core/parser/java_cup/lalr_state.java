@@ -32,8 +32,8 @@
 
 package weka.core.parser.java_cup;
 
-import java.util.Hashtable;
 import java.util.Enumeration;
+import java.util.Hashtable;
 import java.util.Stack;
 
 /** This class represents a state in the LALR viable prefix recognition machine.

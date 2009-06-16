@@ -22,14 +22,16 @@
 
 package weka.classifiers.lazy;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.UpdateableClassifier;
+import weka.core.AdditionalMeasureProducer;
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.Instance;
 import weka.core.Instances;
-import weka.core.neighboursearch.LinearNNSearch;
-import weka.core.neighboursearch.NearestNeighbourSearch;
 import weka.core.Option;
 import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
@@ -42,10 +44,8 @@ import weka.core.WeightedInstancesHandler;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-import weka.core.AdditionalMeasureProducer;
-
-import java.util.Enumeration;
-import java.util.Vector;
+import weka.core.neighboursearch.LinearNNSearch;
+import weka.core.neighboursearch.NearestNeighbourSearch;
 
 /**
  <!-- globalinfo-start -->

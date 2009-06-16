@@ -22,6 +22,11 @@
 
 package weka.classifiers.mi;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.functions.Logistic;
 import weka.classifiers.functions.supportVector.Kernel;
@@ -54,11 +59,6 @@ import weka.filters.unsupervised.attribute.Normalize;
 import weka.filters.unsupervised.attribute.PropositionalToMultiInstance;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
 import weka.filters.unsupervised.attribute.Standardize;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

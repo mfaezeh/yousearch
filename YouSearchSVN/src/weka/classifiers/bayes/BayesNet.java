@@ -21,6 +21,9 @@
  */
 package weka.classifiers.bayes;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.bayes.net.ADNode;
 import weka.classifiers.bayes.net.BIFReader;
@@ -48,9 +51,6 @@ import weka.estimators.Estimator;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.Discretize;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

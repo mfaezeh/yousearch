@@ -1,14 +1,14 @@
 package weka.classifiers.bayes.net;
 
-import weka.classifiers.bayes.BayesNet;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.Vector;
+
+import weka.classifiers.bayes.BayesNet;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 
 public class MarginCalculator implements Serializable, RevisionHandler {

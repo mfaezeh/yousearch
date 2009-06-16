@@ -22,6 +22,10 @@
  
 package weka.classifiers.bayes.net.search.local;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.bayes.BayesNet;
 import weka.classifiers.bayes.net.ParentSet;
 import weka.core.Instances;
@@ -29,10 +33,6 @@ import weka.core.Option;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

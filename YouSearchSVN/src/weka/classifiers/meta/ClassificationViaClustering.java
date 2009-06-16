@@ -21,11 +21,14 @@
 
 package weka.classifiers.meta;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.rules.ZeroR;
+import weka.clusterers.AbstractClusterer;
 import weka.clusterers.ClusterEvaluation;
 import weka.clusterers.Clusterer;
-import weka.clusterers.AbstractClusterer;
 import weka.clusterers.SimpleKMeans;
 import weka.core.Capabilities;
 import weka.core.Instance;
@@ -35,9 +38,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

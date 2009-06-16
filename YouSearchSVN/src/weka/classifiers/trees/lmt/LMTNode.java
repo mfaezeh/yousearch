@@ -22,6 +22,10 @@
 
 package weka.classifiers.trees.lmt;
 
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Vector;
+
 import weka.classifiers.Evaluation;
 import weka.classifiers.functions.SimpleLinearRegression;
 import weka.classifiers.trees.j48.ClassifierSplitModel;
@@ -32,10 +36,6 @@ import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.NominalToBinary;
-
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Vector;
 
 /** 
  * Auxiliary class for list of LMTNodes

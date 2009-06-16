@@ -22,12 +22,12 @@
 
 package weka.classifiers.trees.adtree;
 
+import java.util.Enumeration;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.util.Enumeration;
 
 /**
  * Class representing a two-way split on a numeric attribute, of the form:

@@ -23,6 +23,12 @@
 
 package weka.clusterers.forOPTICSAndDBScan.Databases;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.TreeMap;
+
 import weka.clusterers.forOPTICSAndDBScan.DataObjects.DataObject;
 import weka.clusterers.forOPTICSAndDBScan.Utils.EpsilonRange_ListElement;
 import weka.clusterers.forOPTICSAndDBScan.Utils.PriorityQueue;
@@ -30,12 +36,6 @@ import weka.clusterers.forOPTICSAndDBScan.Utils.PriorityQueueElement;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.TreeMap;
 
 /**
  * <p>

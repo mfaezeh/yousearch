@@ -21,11 +21,11 @@
 
 package weka.classifiers.functions.pace;
 
+import java.util.Random;
+
 import weka.core.RevisionUtils;
 import weka.core.matrix.DoubleVector;
 import weka.core.matrix.Maths;
-
-import java.util.Random;
 
 /**
  * Class for manipulating chi-square mixture distributions. <p/>

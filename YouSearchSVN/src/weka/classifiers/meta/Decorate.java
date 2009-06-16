@@ -22,6 +22,10 @@
 
 package weka.classifiers.meta;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.RandomizableIteratedSingleClassifierEnhancer;
 import weka.core.Capabilities;
@@ -36,10 +40,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

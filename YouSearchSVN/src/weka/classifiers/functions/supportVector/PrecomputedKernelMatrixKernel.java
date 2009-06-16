@@ -21,21 +21,19 @@
  */
 package weka.classifiers.functions.supportVector;
 
-import weka.core.Option;
-import weka.core.matrix.Matrix;
-import weka.core.Instances;
-import weka.core.Utils;
-import weka.core.Capabilities;
-import weka.core.Capabilities.Capability;
-import weka.core.Instance;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
+import java.io.File;
+import java.io.FileReader;
 import java.util.Enumeration;
 import java.util.Vector;
 
-import java.io.FileReader;
-import java.io.File;
+import weka.core.Capabilities;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.Option;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
+import weka.core.Capabilities.Capability;
+import weka.core.matrix.Matrix;
 
 /**
  *
