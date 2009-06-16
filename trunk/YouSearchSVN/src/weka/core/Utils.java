@@ -22,11 +22,10 @@
 
 package weka.core;
 
-import java.lang.Math;
-import java.lang.reflect.Array;
-import java.util.Properties;
 import java.io.File;
 import java.io.FileInputStream;
+import java.lang.reflect.Array;
+import java.util.Properties;
 import java.util.Random;
 
 /**

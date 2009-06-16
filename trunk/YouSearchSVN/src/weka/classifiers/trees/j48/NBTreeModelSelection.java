@@ -22,12 +22,12 @@
 
 package weka.classifiers.trees.j48;
 
+import java.util.Enumeration;
+
 import weka.core.Attribute;
 import weka.core.Instances;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.util.Enumeration;
 
 /**
  * Class for selecting a NB tree split.

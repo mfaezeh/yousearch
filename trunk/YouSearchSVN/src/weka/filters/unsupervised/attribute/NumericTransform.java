@@ -22,6 +22,11 @@
 
 package weka.filters.unsupervised.attribute;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -35,11 +40,6 @@ import weka.core.Capabilities.Capability;
 import weka.filters.Filter;
 import weka.filters.StreamableFilter;
 import weka.filters.UnsupervisedFilter;
-
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

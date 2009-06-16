@@ -22,10 +22,10 @@
 
 package weka.estimators;
 
-import weka.core.Capabilities.Capability;
 import weka.core.Capabilities;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
+import weka.core.Capabilities.Capability;
 
 /** 
  * Simple probability estimator that places a single Poisson distribution

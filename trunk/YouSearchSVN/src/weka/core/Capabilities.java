@@ -21,14 +21,14 @@
 
 package weka.core;
 
-import weka.core.converters.ConverterUtils.DataSource;
-
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Vector;
+
+import weka.core.converters.ConverterUtils.DataSource;
 
 /**
  * A class that describes the capabilites (e.g., handling certain types of

@@ -22,6 +22,8 @@
 
 package weka.classifiers.rules;
 
+import java.util.Enumeration;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.Sourcable;
 import weka.core.Attribute;
@@ -32,8 +34,6 @@ import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.WeightedInstancesHandler;
 import weka.core.Capabilities.Capability;
-
-import java.util.Enumeration;
 
 /**
  <!-- globalinfo-start -->

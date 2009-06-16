@@ -22,12 +22,12 @@
 
 package weka.core;
 
-import java.util.Map;
-import java.util.Set;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Properties;
-import java.util.Enumeration;
+import java.util.Set;
 
 /**
  * This class encapsulates a map of all environment and java system properties.

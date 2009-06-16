@@ -21,6 +21,10 @@
 
 package weka.classifiers.mi;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.core.Capabilities;
 import weka.core.Instance;
@@ -36,10 +40,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
 /**
  <!-- globalinfo-start -->
  * Modified version of the Citation kNN multi instance classifier.<br/>

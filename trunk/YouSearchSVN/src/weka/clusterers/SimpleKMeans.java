@@ -21,6 +21,11 @@
  */
 package weka.clusterers;
 
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.rules.DecisionTableHashKey;
 import weka.core.Attribute;
 import weka.core.Capabilities;
@@ -33,11 +38,6 @@ import weka.core.WeightedInstancesHandler;
 import weka.core.Capabilities.Capability;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
-
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

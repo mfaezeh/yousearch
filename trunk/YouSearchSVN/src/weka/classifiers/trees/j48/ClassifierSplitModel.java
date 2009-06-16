@@ -22,12 +22,12 @@
 
 package weka.classifiers.trees.j48;
 
+import java.io.Serializable;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.Utils;
-
-import java.io.Serializable;
 
 /** 
  * Abstract class for classification models that can be used 

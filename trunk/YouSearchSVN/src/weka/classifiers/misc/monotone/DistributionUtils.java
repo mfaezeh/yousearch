@@ -22,11 +22,11 @@
 
 package weka.classifiers.misc.monotone;
 
+import java.util.Arrays;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.estimators.DiscreteEstimator;
-
-import java.util.Arrays;
 
 /** 
  * Class with some simple methods acting on 

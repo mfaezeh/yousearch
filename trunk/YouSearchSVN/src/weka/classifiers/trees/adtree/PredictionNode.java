@@ -22,13 +22,13 @@
 
 package weka.classifiers.trees.adtree;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+
 import weka.classifiers.trees.ADTree;
 import weka.core.FastVector;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
 
 /**
  * Class representing a prediction node in an alternating tree.

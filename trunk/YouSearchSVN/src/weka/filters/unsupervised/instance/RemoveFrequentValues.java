@@ -22,6 +22,12 @@
 
 package weka.filters.unsupervised.instance;
 
+import java.util.Arrays;
+import java.util.Enumeration;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.AttributeStats;
 import weka.core.Capabilities;
@@ -37,12 +43,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.filters.Filter;
 import weka.filters.UnsupervisedFilter;
-
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

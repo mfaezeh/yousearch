@@ -22,6 +22,13 @@
 
 package weka.classifiers.meta;
 
+import java.io.Serializable;
+import java.io.StreamTokenizer;
+import java.io.StringReader;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Evaluation;
 import weka.classifiers.RandomizableSingleClassifierEnhancer;
 import weka.core.Capabilities;
@@ -39,13 +46,6 @@ import weka.core.TechnicalInformationHandler;
 import weka.core.Utils;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.io.Serializable;
-import java.io.StreamTokenizer;
-import java.io.StringReader;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

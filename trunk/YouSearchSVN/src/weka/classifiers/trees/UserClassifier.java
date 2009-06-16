@@ -22,6 +22,16 @@
 
 package weka.classifiers.trees;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.Serializable;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTabbedPane;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.functions.LinearRegression;
 import weka.core.Capabilities;
@@ -49,16 +59,6 @@ import weka.gui.treevisualizer.TreeVisualizer;
 import weka.gui.visualize.VisualizePanel;
 import weka.gui.visualize.VisualizePanelEvent;
 import weka.gui.visualize.VisualizePanelListener;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.io.Serializable;
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JTabbedPane;
 
 
 /**

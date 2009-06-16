@@ -32,9 +32,10 @@
 
 package weka.core.parser.java_cup;
 
-import weka.core.parser.java_cup.runtime.Symbol;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+
+import weka.core.parser.java_cup.runtime.Symbol;
 public class ErrorManager{
     private static ErrorManager errorManager;
     private int errors = 0;

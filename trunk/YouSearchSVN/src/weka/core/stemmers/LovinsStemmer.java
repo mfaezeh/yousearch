@@ -22,13 +22,13 @@
 
 package weka.core.stemmers;
 
+import java.util.HashMap;
+
 import weka.core.RevisionUtils;
 import weka.core.TechnicalInformation;
-import weka.core.TechnicalInformation.Type;
-import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformationHandler;
-
-import java.util.HashMap;
+import weka.core.TechnicalInformation.Field;
+import weka.core.TechnicalInformation.Type;
 
 /**
  <!-- globalinfo-start -->

@@ -22,15 +22,15 @@
 
 package weka.classifiers.trees;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.trees.m5.M5Base;
 import weka.classifiers.trees.m5.Rule;
 import weka.core.Drawable;
 import weka.core.Option;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

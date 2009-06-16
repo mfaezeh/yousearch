@@ -22,6 +22,9 @@
 
 package weka.classifiers.trees;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.Sourcable;
 import weka.classifiers.trees.j48.BinC45ModelSelection;
@@ -45,9 +48,6 @@ import weka.core.Utils;
 import weka.core.WeightedInstancesHandler;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

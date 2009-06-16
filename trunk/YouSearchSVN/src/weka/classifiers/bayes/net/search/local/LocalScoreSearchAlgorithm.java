@@ -22,20 +22,20 @@
  
 package weka.classifiers.bayes.net.search.local;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.bayes.BayesNet;
 import weka.classifiers.bayes.net.ParentSet;
 import weka.classifiers.bayes.net.search.SearchAlgorithm;
-import weka.core.Instances;
 import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.Option;
 import weka.core.RevisionUtils;
-import weka.core.Utils;
+import weka.core.SelectedTag;
 import weka.core.Statistics;
 import weka.core.Tag;
-import weka.core.Option;
-import weka.core.SelectedTag;
-
-import java.util.Vector;
-import java.util.Enumeration;
+import weka.core.Utils;
 
 /** 
  <!-- globalinfo-start -->

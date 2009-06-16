@@ -22,14 +22,6 @@
 
 package weka.classifiers;
 
-import weka.core.AttributeExpression;
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.Matrix;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-
 import java.io.LineNumberReader;
 import java.io.Reader;
 import java.io.Serializable;
@@ -37,6 +29,14 @@ import java.io.StreamTokenizer;
 import java.io.Writer;
 import java.util.Random;
 import java.util.StringTokenizer;
+
+import weka.core.AttributeExpression;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.Matrix;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
 
 /**
  * Class for storing and manipulating a misclassification cost matrix.

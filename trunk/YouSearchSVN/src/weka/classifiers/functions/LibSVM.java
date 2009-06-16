@@ -23,6 +23,13 @@
 
 package weka.classifiers.functions;
 
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.Enumeration;
+import java.util.StringTokenizer;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.core.Capabilities;
 import weka.core.Instance;
@@ -38,13 +45,6 @@ import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Normalize;
-
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.Enumeration;
-import java.util.StringTokenizer;
-import java.util.Vector;
 
 /*
  * Modifications by FracPete:

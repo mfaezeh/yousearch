@@ -21,12 +21,12 @@
 
 package weka.core.xml;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.lang.reflect.Method;
 import java.util.Enumeration;
 import java.util.Hashtable;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * This class handles relationships between display names of properties 

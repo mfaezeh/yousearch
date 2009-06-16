@@ -43,6 +43,9 @@
 
 package weka.classifiers.lazy;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+
 import weka.classifiers.Classifier;
 import weka.core.Attribute;
 import weka.core.Capabilities;
@@ -57,9 +60,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.io.Serializable;
-import java.util.ArrayList;
 
 /**
  <!-- globalinfo-start -->

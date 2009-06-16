@@ -6,7 +6,8 @@
 
 package weka.core.parser.JFlex;
 
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Vector;
 
 /** CUP v0.10k generated parser.
   * @version Sun Nov 07 14:07:52 GMT+10:00 2004

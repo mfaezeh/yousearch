@@ -22,6 +22,9 @@
 
 package weka.classifiers.trees;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.ft.FTInnerNode;
 import weka.classifiers.trees.ft.FTLeavesNode;
@@ -46,9 +49,6 @@ import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.NominalToBinary;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

@@ -22,6 +22,11 @@
 
 package weka.classifiers.rules.part;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.trees.j48.ModelSelection;
 import weka.core.Capabilities;
 import weka.core.CapabilitiesHandler;
@@ -31,11 +36,6 @@ import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  * Class for handling a decision list.

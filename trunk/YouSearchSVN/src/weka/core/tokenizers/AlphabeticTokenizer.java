@@ -21,9 +21,9 @@
 
 package weka.core.tokenizers;
 
-import weka.core.RevisionUtils;
-
 import java.util.NoSuchElementException;
+
+import weka.core.RevisionUtils;
 
 /**
  <!-- globalinfo-start -->

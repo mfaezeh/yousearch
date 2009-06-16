@@ -21,6 +21,10 @@
 
 package weka.classifiers.rules;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Random;
+
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;
@@ -28,10 +32,6 @@ import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Random;
 
 /**
  * This class implements the statistics functions used in the 

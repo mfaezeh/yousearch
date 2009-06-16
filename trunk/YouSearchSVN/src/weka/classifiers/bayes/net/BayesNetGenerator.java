@@ -22,6 +22,10 @@
 
 package weka.classifiers.bayes.net;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.bayes.net.estimate.DiscreteEstimatorBayes;
 import weka.core.Attribute;
 import weka.core.FastVector;
@@ -32,10 +36,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.estimators.Estimator;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

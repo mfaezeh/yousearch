@@ -22,6 +22,11 @@
 
 package weka.classifiers.functions.supportVector;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.functions.SVMreg;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -30,11 +35,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  * Base class implementation for learning algorithm of SVMreg

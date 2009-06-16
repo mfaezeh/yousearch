@@ -22,12 +22,12 @@
 
 package weka.experiment;
 
-import weka.core.RevisionHandler;
-import weka.core.Utils;
-
 import java.io.Serializable;
 import java.util.Enumeration;
 import java.util.Vector;
+
+import weka.core.RevisionHandler;
+import weka.core.Utils;
 
 /**
  * This matrix is a container for the datasets and classifier setups and 

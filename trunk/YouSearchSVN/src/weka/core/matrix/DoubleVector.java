@@ -21,11 +21,11 @@
 
 package weka.core.matrix;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.lang.reflect.Method;
 import java.util.Arrays;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * A vector specialized on doubles.

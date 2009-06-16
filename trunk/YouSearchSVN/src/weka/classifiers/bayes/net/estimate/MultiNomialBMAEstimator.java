@@ -16,6 +16,9 @@
 
 package weka.classifiers.bayes.net.estimate;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.bayes.BayesNet;
 import weka.classifiers.bayes.net.search.local.K2;
 import weka.core.Attribute;
@@ -27,9 +30,6 @@ import weka.core.RevisionUtils;
 import weka.core.Statistics;
 import weka.core.Utils;
 import weka.estimators.Estimator;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

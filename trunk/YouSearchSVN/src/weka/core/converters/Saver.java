@@ -22,14 +22,14 @@
 
 package weka.core.converters;
 
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionHandler;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Serializable;
+
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionHandler;
 
 /** 
  * Interface to something that can save Instances to an output destination in some

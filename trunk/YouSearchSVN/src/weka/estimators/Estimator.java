@@ -22,6 +22,14 @@
 
 package weka.estimators;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.CapabilitiesHandler;
 import weka.core.Instance;
@@ -33,14 +41,6 @@ import weka.core.RevisionUtils;
 import weka.core.SerializedObject;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
  
 /** 
  *

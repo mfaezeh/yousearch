@@ -21,15 +21,15 @@
 
 package weka.classifiers.functions.pace;
 
+import java.text.DecimalFormat;
+import java.util.Random;
+
 import weka.core.RevisionUtils;
 import weka.core.matrix.DoubleVector;
 import weka.core.matrix.FlexibleDecimalFormat;
 import weka.core.matrix.IntVector;
-import weka.core.matrix.Matrix;
 import weka.core.matrix.Maths;
-
-import java.util.Random;
-import java.text.DecimalFormat;
+import weka.core.matrix.Matrix;
 
 /**
  * Class for matrix manipulation used for pace regression. <p>

@@ -21,12 +21,12 @@
  */
 package weka.classifiers.rules;
 
+import java.io.Serializable;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * Class providing hash table keys for DecisionTable

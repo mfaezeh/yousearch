@@ -32,8 +32,8 @@
 
 package weka.core.parser.java_cup;
 
-import java.util.Hashtable;
 import java.util.Enumeration;
+import java.util.Hashtable;
 
 /** This class represents a production in the grammar.  It contains
  *  a LHS non terminal, and an array of RHS symbols.  As various 

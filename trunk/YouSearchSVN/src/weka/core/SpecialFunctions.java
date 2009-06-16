@@ -22,7 +22,6 @@
 
 package weka.core;
 
-import java.lang.Math;
 
 /**
  * Class implementing some mathematical functions.

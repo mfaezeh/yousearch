@@ -22,10 +22,10 @@
 
 package weka.classifiers.bayes.net;
 
+import java.io.Serializable;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * Part of ADTree implementation. See ADNode.java for more details.

@@ -22,6 +22,8 @@
 
 package weka.classifiers.lazy;
 
+import java.util.Enumeration;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.UpdateableClassifier;
 import weka.core.Capabilities;
@@ -34,8 +36,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.util.Enumeration;
 
 /**
  <!-- globalinfo-start -->

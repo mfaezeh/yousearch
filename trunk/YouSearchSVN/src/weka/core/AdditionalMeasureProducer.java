@@ -22,7 +22,7 @@
 
 package weka.core;
 
-import java.util.*;
+import java.util.Enumeration;
 
 /** 
  * Interface to something that can produce measures other than those

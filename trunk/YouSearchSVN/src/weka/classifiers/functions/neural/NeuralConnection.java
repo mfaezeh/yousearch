@@ -21,11 +21,11 @@
 
 package weka.classifiers.functions.neural;
 
-import weka.core.RevisionHandler;
-
 import java.awt.Color;
 import java.awt.Graphics;
 import java.io.Serializable;
+
+import weka.core.RevisionHandler;
 
 /** 
  * Abstract unit in a NeuralNetwork.

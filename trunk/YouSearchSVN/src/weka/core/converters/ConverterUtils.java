@@ -22,14 +22,6 @@
 
 package weka.core.converters;
 
-import weka.core.ClassDiscovery;
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.gui.GenericObjectEditor;
-import weka.gui.GenericPropertiesCreator;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -43,6 +35,14 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Properties;
 import java.util.Vector;
+
+import weka.core.ClassDiscovery;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.gui.GenericObjectEditor;
+import weka.gui.GenericPropertiesCreator;
 
 /**
  * Utility routines for the converter package.

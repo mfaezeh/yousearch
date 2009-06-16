@@ -22,8 +22,6 @@
 
 package weka.core.xml;
 
-import weka.core.RevisionUtils;
-
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.Collection;
@@ -42,6 +40,8 @@ import java.util.Vector;
 import javax.swing.DefaultListModel;
 
 import org.w3c.dom.Element;
+
+import weka.core.RevisionUtils;
 
 /**
  * This serializer contains some read/write methods for common classes that

@@ -22,6 +22,10 @@
 
 package weka.classifiers.rules;
 
+import java.util.BitSet;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.attributeSelection.ASEvaluation;
 import weka.attributeSelection.ASSearch;
 import weka.attributeSelection.SubsetEvaluator;
@@ -37,10 +41,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.util.BitSet;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  *

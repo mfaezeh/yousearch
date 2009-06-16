@@ -22,15 +22,15 @@
 
 package weka.classifiers.bayes.net.search.global;
 
+import java.util.Enumeration;
+
 import weka.classifiers.bayes.BayesNet;
 import weka.core.Instances;
 import weka.core.RevisionUtils;
 import weka.core.TechnicalInformation;
-import weka.core.TechnicalInformation.Type;
-import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformationHandler;
-
-import java.util.Enumeration;
+import weka.core.TechnicalInformation.Field;
+import weka.core.TechnicalInformation.Type;
 
 /** 
  <!-- globalinfo-start -->

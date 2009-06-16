@@ -23,11 +23,11 @@
 
 package weka.clusterers.forOPTICSAndDBScan.Databases;
 
-import weka.clusterers.forOPTICSAndDBScan.DataObjects.DataObject;
-import weka.core.Instances;
-
 import java.util.Iterator;
 import java.util.List;
+
+import weka.clusterers.forOPTICSAndDBScan.DataObjects.DataObject;
+import weka.core.Instances;
 
 /**
  * <p>

@@ -22,6 +22,8 @@
 
 package weka.classifiers.rules.part;
 
+import java.io.Serializable;
+
 import weka.classifiers.trees.j48.ClassifierSplitModel;
 import weka.classifiers.trees.j48.Distribution;
 import weka.classifiers.trees.j48.EntropySplitCrit;
@@ -32,8 +34,6 @@ import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.io.Serializable;
 
 /**
  * Class for handling a rule (partial tree) for a decision list.

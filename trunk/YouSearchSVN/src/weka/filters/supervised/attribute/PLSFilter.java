@@ -22,6 +22,9 @@
 
 package weka.filters.supervised.attribute;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -45,9 +48,6 @@ import weka.filters.SupervisedFilter;
 import weka.filters.unsupervised.attribute.Center;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
 import weka.filters.unsupervised.attribute.Standardize;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

@@ -22,12 +22,6 @@
 
 package weka.core.converters;
 
-import weka.core.Attribute;
-import weka.core.FastVector;
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionUtils;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -39,6 +33,12 @@ import java.io.StreamTokenizer;
 import java.io.StringReader;
 import java.util.Enumeration;
 import java.util.Hashtable;
+
+import weka.core.Attribute;
+import weka.core.FastVector;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionUtils;
 
 /**
  <!-- globalinfo-start -->

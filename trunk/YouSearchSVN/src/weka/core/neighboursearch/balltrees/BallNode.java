@@ -21,13 +21,13 @@
 
 package weka.core.neighboursearch.balltrees;
 
+import java.io.Serializable;
+
 import weka.core.DistanceFunction;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * Class representing a node of a BallTree.

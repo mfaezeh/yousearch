@@ -20,9 +20,15 @@
 
 package weka.core.parser.JFlex;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.Hashtable;
 
 /**
  * This class manages the actual code generation, putting

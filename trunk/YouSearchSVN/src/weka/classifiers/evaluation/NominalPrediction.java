@@ -22,10 +22,10 @@
 
 package weka.classifiers.evaluation;
 
+import java.io.Serializable;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * Encapsulates an evaluatable nominal prediction: the predicted probability

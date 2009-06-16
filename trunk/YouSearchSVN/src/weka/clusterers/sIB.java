@@ -22,6 +22,12 @@
 
 package weka.clusterers;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -36,12 +42,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.core.matrix.Matrix;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

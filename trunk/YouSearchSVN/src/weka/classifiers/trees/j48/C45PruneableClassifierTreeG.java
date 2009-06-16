@@ -23,14 +23,15 @@
 
 package weka.classifiers.trees.j48;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 import weka.core.Capabilities;
-import weka.core.Instances;
 import weka.core.Instance;
+import weka.core.Instances;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.Capabilities.Capability;
-import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Class for handling a tree structure that can

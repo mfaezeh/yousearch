@@ -38,10 +38,18 @@
 
 package weka.filters.unsupervised.instance.subsetbyexpression;
 
-import weka.core.*;
-import weka.core.parser.java_cup.runtime.*;
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.ByteArrayInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.HashMap;
+import java.util.Hashtable;
+
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.parser.java_cup.runtime.DefaultSymbolFactory;
+import weka.core.parser.java_cup.runtime.SymbolFactory;
 
 /** CUP v0.11a beta 20060608 generated parser.
   * @version Thu Jun 19 13:14:21 NZST 2008

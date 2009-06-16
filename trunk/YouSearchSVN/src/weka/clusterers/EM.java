@@ -22,9 +22,13 @@
 
 package weka.clusterers;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
+import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.Instance;
-import weka.core.Attribute;
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.RevisionUtils;
@@ -33,10 +37,6 @@ import weka.core.WeightedInstancesHandler;
 import weka.estimators.DiscreteEstimator;
 import weka.estimators.Estimator;
 import weka.filters.unsupervised.attribute.ReplaceMissingValues;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

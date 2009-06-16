@@ -23,12 +23,12 @@
 
 package weka.clusterers.forOPTICSAndDBScan.OPTICS_GUI;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.io.File;
 
 import javax.swing.filechooser.FileFilter;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * <p>

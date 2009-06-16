@@ -15,10 +15,6 @@
 
 package weka.core.matrix;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-
 import java.io.BufferedReader;
 import java.io.LineNumberReader;
 import java.io.PrintWriter;
@@ -33,6 +29,10 @@ import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.StringTokenizer;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
 
 /**
  * Jama = Java Matrix class.

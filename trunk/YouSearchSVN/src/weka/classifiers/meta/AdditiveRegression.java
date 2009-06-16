@@ -22,6 +22,9 @@
 
 package weka.classifiers.meta;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.IteratedSingleClassifierEnhancer;
 import weka.classifiers.rules.ZeroR;
@@ -39,9 +42,6 @@ import weka.core.WeightedInstancesHandler;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

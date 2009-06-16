@@ -21,6 +21,10 @@
 
 package weka.classifiers;
 
+import java.io.File;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.OptionHandler;
@@ -28,10 +32,6 @@ import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.converters.ConverterUtils.DataSource;
-
-import java.io.File;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  * A simple class for checking the source generated from Classifiers

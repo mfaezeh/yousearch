@@ -23,12 +23,6 @@
 
 package weka.clusterers.forOPTICSAndDBScan.OPTICS_GUI;
 
-import weka.clusterers.forOPTICSAndDBScan.DataObjects.DataObject;
-import weka.core.FastVector;
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-import weka.core.Utils;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -36,6 +30,12 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
 import javax.swing.JComponent;
+
+import weka.clusterers.forOPTICSAndDBScan.DataObjects.DataObject;
+import weka.core.FastVector;
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
+import weka.core.Utils;
 
 /**
  * <p>

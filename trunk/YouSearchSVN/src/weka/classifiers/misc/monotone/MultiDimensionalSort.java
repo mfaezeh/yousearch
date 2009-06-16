@@ -22,11 +22,11 @@
 
 package weka.classifiers.misc.monotone;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.util.Arrays;
 import java.util.Comparator;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /** 
  * Class for doing multidimensional sorting, using an array of

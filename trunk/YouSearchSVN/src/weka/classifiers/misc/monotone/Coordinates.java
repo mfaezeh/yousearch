@@ -22,11 +22,11 @@
 
 package weka.classifiers.misc.monotone;
 
+import java.io.Serializable;
+
 import weka.core.Instance;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * This is a simple implementation of the data space.  The <code>

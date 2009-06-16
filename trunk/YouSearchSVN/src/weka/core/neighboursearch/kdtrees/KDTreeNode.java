@@ -21,10 +21,10 @@
 
 package weka.core.neighboursearch.kdtrees;
 
+import java.io.Serializable;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.Serializable;
 
 /**
  * A class representing a KDTree node. A node does not explicitly

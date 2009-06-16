@@ -22,6 +22,9 @@
 
 package weka.classifiers.mi;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.functions.SMO;
 import weka.classifiers.functions.supportVector.Kernel;
@@ -46,9 +49,6 @@ import weka.filters.unsupervised.attribute.MultiInstanceToPropositional;
 import weka.filters.unsupervised.attribute.Normalize;
 import weka.filters.unsupervised.attribute.Standardize;
 import weka.filters.unsupervised.instance.SparseToNonSparse;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 
 /**

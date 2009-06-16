@@ -34,11 +34,12 @@
 
 package weka.core.parser.java_cup;
 
-import weka.core.parser.java_cup.runtime.ComplexSymbolFactory;
-import weka.core.parser.java_cup.runtime.ComplexSymbolFactory.Location;
-import weka.core.parser.java_cup.runtime.Symbol;
-import java.lang.Error;
+import java.io.IOException;
 import java.io.InputStreamReader;
+
+import weka.core.parser.java_cup.runtime.ComplexSymbolFactory;
+import weka.core.parser.java_cup.runtime.Symbol;
+import weka.core.parser.java_cup.runtime.ComplexSymbolFactory.Location;
 
 
 /**

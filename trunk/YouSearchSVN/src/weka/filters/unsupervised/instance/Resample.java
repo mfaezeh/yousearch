@@ -22,6 +22,11 @@
 
 package weka.filters.unsupervised.instance;
 
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -32,11 +37,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.filters.Filter;
 import weka.filters.UnsupervisedFilter;
-
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

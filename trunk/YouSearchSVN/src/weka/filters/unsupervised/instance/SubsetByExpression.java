@@ -21,6 +21,9 @@
 
 package weka.filters.unsupervised.instance;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.Instances;
 import weka.core.Option;
@@ -29,9 +32,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.filters.SimpleBatchFilter;
 import weka.filters.unsupervised.instance.subsetbyexpression.Parser;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

@@ -21,9 +21,9 @@
 
 package weka.core.tokenizers;
 
-import weka.core.RevisionUtils;
-
 import java.util.StringTokenizer;
+
+import weka.core.RevisionUtils;
 
 /**
  <!-- globalinfo-start -->

@@ -22,6 +22,9 @@
 
 package weka.classifiers.meta.nestedDichotomies;
 
+import java.util.Hashtable;
+import java.util.Random;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.RandomizableSingleClassifierEnhancer;
 import weka.classifiers.meta.FilteredClassifier;
@@ -39,9 +42,6 @@ import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.MakeIndicator;
 import weka.filters.unsupervised.instance.RemoveWithValues;
-
-import java.util.Hashtable;
-import java.util.Random;
 
 /**
  <!-- globalinfo-start -->

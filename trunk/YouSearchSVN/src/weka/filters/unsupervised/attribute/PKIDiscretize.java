@@ -22,6 +22,9 @@
 
 package weka.filters.unsupervised.attribute;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.RevisionUtils;
@@ -30,9 +33,6 @@ import weka.core.TechnicalInformationHandler;
 import weka.core.Utils;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

@@ -32,8 +32,8 @@
 
 package weka.core.parser.java_cup;
 
-import java.util.Hashtable;
 import java.util.Enumeration;
+import java.util.Hashtable;
 
 /** This class represents a set of symbols and provides a series of 
  *  set operations to manipulate them.

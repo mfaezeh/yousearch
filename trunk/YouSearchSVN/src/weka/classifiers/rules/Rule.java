@@ -21,13 +21,13 @@
 
 package weka.classifiers.rules;
 
+import java.io.Serializable;
+
 import weka.core.Copyable;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.WeightedInstancesHandler;
-
-import java.io.Serializable;
 
 /**
  * Abstract class of generic rule

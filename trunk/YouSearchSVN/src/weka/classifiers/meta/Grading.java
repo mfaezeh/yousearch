@@ -22,6 +22,8 @@
 
 package weka.classifiers.meta;
 
+import java.util.Random;
+
 import weka.classifiers.Classifier;
 import weka.core.Attribute;
 import weka.core.FastVector;
@@ -33,8 +35,6 @@ import weka.core.TechnicalInformationHandler;
 import weka.core.Utils;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.util.Random;
 
 /**
  <!-- globalinfo-start -->

@@ -21,11 +21,11 @@
 
 package weka.core.matrix;
 
-import weka.core.RevisionHandler;
-import weka.core.RevisionUtils;
-
 import java.text.DecimalFormat;
 import java.text.FieldPosition;
+
+import weka.core.RevisionHandler;
+import weka.core.RevisionUtils;
 
 /**
  * Class for the format of floating point numbers

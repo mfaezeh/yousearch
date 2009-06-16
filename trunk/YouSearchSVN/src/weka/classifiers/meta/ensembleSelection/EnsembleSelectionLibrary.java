@@ -22,13 +22,6 @@
 
 package weka.classifiers.meta.ensembleSelection;
 
-import weka.classifiers.Classifier;
-import weka.classifiers.EnsembleLibrary;
-import weka.classifiers.EnsembleLibraryModel;
-import weka.classifiers.meta.EnsembleSelection;
-import weka.core.Instances;
-import weka.core.RevisionUtils;
-
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.io.File;
@@ -44,6 +37,13 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.zip.Adler32;
+
+import weka.classifiers.Classifier;
+import weka.classifiers.EnsembleLibrary;
+import weka.classifiers.EnsembleLibraryModel;
+import weka.classifiers.meta.EnsembleSelection;
+import weka.core.Instances;
+import weka.core.RevisionUtils;
 
 /**
  * This class represents an ensemble library.  That is a 

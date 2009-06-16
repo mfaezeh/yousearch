@@ -22,6 +22,10 @@
 
 package weka.classifiers;
 
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.CheckScheme;
 import weka.core.FastVector;
@@ -35,10 +39,6 @@ import weka.core.SerializationHelper;
 import weka.core.TestInstances;
 import weka.core.Utils;
 import weka.core.WeightedInstancesHandler;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  * Class for examining the capabilities and finding problems with 

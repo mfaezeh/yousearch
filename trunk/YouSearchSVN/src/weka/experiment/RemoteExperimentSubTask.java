@@ -22,10 +22,10 @@
 
 package weka.experiment;
 
+import java.io.File;
+
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
-
-import java.io.File;
 
 /**
  * Class to encapsulate an experiment as a task that can be executed on

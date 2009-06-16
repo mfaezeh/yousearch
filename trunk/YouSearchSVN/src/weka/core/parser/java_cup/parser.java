@@ -38,9 +38,11 @@
 
 package weka.core.parser.java_cup;
 
-import weka.core.parser.java_cup.runtime.*;
 import java.util.Hashtable;
 import java.util.Stack;
+
+import weka.core.parser.java_cup.runtime.ComplexSymbolFactory;
+import weka.core.parser.java_cup.runtime.Symbol;
 
 /** CUP v0.11a beta 20060608 generated parser.
   * @version Wed May 07 11:31:09 NZST 2008

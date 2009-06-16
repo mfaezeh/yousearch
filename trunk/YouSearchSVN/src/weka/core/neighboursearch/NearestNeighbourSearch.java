@@ -21,6 +21,10 @@
 
 package weka.core.neighboursearch;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.AdditionalMeasureProducer;
 import weka.core.DistanceFunction;
 import weka.core.EuclideanDistance;
@@ -31,10 +35,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  * Abstract class for nearest neighbour search. All algorithms (classes) that

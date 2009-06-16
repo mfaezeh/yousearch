@@ -22,6 +22,8 @@
 
 package weka.classifiers.meta;
 
+import java.util.Random;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.RandomizableIteratedSingleClassifierEnhancer;
 import weka.core.Instance;
@@ -30,8 +32,6 @@ import weka.core.Randomizable;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.WeightedInstancesHandler;
-
-import java.util.Random;
 
 /**
  <!-- globalinfo-start -->

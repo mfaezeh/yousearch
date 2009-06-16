@@ -23,11 +23,11 @@
 
 package weka.experiment;
 
-import weka.core.FastVector;
-import weka.core.RevisionUtils;
-
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
+
+import weka.core.FastVector;
+import weka.core.RevisionUtils;
 
 /**
  <!-- globalinfo-start -->

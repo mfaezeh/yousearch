@@ -23,13 +23,13 @@
 
 package weka.clusterers.forOPTICSAndDBScan.OPTICS_GUI;
 
+import javax.swing.table.AbstractTableModel;
+
 import weka.clusterers.forOPTICSAndDBScan.DataObjects.DataObject;
 import weka.core.FastVector;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import javax.swing.table.AbstractTableModel;
 
 /**
  * <p>

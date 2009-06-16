@@ -21,13 +21,13 @@
 
 package weka.core;
 
+import java.io.ByteArrayInputStream;
+import java.util.HashMap;
+
 import weka.core.mathematicalexpression.Parser;
 import weka.core.mathematicalexpression.Scanner;
 import weka.core.parser.java_cup.runtime.DefaultSymbolFactory;
 import weka.core.parser.java_cup.runtime.SymbolFactory;
-
-import java.io.ByteArrayInputStream;
-import java.util.HashMap;
 
 /** 
  * Class for evaluating a string adhering the following grammar:<br/>

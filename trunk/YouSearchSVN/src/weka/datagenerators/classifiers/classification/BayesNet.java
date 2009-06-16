@@ -22,6 +22,9 @@
 
 package weka.datagenerators.classifiers.classification;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.classifiers.bayes.net.BayesNetGenerator;
 import weka.core.Instance;
 import weka.core.Instances;
@@ -29,9 +32,6 @@ import weka.core.Option;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.datagenerators.ClassificationGenerator;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

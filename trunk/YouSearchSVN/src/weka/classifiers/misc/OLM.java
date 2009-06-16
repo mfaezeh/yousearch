@@ -22,6 +22,15 @@
 
 package weka.classifiers.misc;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.RandomizableClassifier;
 import weka.classifiers.misc.monotone.Coordinates;
 import weka.classifiers.misc.monotone.DiscreteDistribution;
@@ -45,15 +54,6 @@ import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.estimators.DiscreteEstimator;
-
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

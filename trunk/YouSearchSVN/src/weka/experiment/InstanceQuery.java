@@ -22,6 +22,13 @@
 
 package weka.experiment;
 
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Vector;
+
 import weka.core.Attribute;
 import weka.core.FastVector;
 import weka.core.Instance;
@@ -31,13 +38,6 @@ import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
 import weka.core.SparseInstance;
 import weka.core.Utils;
-
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
 
 /**
  * Convert the results of a database query into instances. The jdbc

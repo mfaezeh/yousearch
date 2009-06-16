@@ -23,8 +23,9 @@
 
 package weka.core.mathematicalexpression;
 
+import java.io.InputStream;
+
 import weka.core.parser.java_cup.runtime.SymbolFactory;
-import java.io.*;
 
 /**
  * A scanner for mathematical expressions.

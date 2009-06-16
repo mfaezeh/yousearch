@@ -22,6 +22,8 @@
 
 package weka.classifiers.trees.ft;
 
+import java.util.Vector;
+
 import weka.classifiers.functions.SimpleLinearRegression;
 import weka.classifiers.trees.j48.BinC45ModelSelection;
 import weka.classifiers.trees.j48.BinC45Split;
@@ -38,8 +40,6 @@ import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.NominalToBinary;
-
-import java.util.Vector;
 
 /**
  * Abstract class for Functional tree structure. 

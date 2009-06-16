@@ -32,9 +32,8 @@
 
 package weka.core.parser.java_cup;
 
-import weka.core.parser.java_cup.assoc;
-import java.util.Hashtable;
 import java.util.Enumeration;
+import java.util.Hashtable;
 
 /** This class represents a terminal symbol in the grammar.  Each terminal 
  *  has a textual name, an index, and a string which indicates the type of 

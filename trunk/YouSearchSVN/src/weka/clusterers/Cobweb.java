@@ -22,6 +22,11 @@
 
 package weka.clusterers;
 
+import java.io.Serializable;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.core.AttributeStats;
 import weka.core.Capabilities;
 import weka.core.Drawable;
@@ -40,11 +45,6 @@ import weka.core.TechnicalInformation.Type;
 import weka.experiment.Stats;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Add;
-
-import java.io.Serializable;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

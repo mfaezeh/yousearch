@@ -22,7 +22,6 @@
 package weka.classifiers.bayes.blr;
 
 import weka.classifiers.bayes.BayesianLogisticRegression;
-
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionUtils;

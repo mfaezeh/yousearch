@@ -22,6 +22,8 @@
 
 package weka.classifiers.meta;
 
+import java.util.Random;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.functions.LinearRegression;
 import weka.core.Instance;
@@ -36,8 +38,6 @@ import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.MakeIndicator;
 import weka.filters.unsupervised.attribute.Remove;
-
-import java.util.Random;
 
 /**
  <!-- globalinfo-start -->

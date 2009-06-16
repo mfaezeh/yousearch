@@ -22,7 +22,12 @@
 
 package weka.classifiers.meta;
 
-import weka.filters.unsupervised.attribute.Remove;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.RandomizableIteratedSingleClassifierEnhancer;
 import weka.core.Instance;
@@ -36,12 +41,7 @@ import weka.core.Utils;
 import weka.core.WeightedInstancesHandler;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
-import java.util.Arrays;
-import java.util.Collections;
+import weka.filters.unsupervised.attribute.Remove;
 
 /**
  <!-- globalinfo-start -->
