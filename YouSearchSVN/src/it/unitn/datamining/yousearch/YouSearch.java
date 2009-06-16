@@ -112,7 +112,7 @@ public class YouSearch {
 			toFile += "\t\t<title>"+x.get(i).getTitle().getPlainText().replaceAll("&","&amp;")+"</title>\n";
 			toFile += "\t\t<keywords>\n";
 			for(int j=0; j<videoKeywords.size(); j++){
-				toFile += "\t\t\t<key>"+videoKeywords.get(j)+"</key>\n";
+				toFile += "\t\t\t<key>"+videoKeywords.get(j).replaceAll("&","&amp;")+"</key>\n";
 			}
 			
 			toFile += "\t\t</keywords>\n";
