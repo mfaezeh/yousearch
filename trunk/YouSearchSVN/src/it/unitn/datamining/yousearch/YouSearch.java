@@ -79,7 +79,9 @@ public class YouSearch {
 				this.currPage = i;
 				this.query.setMaxResults(this.maxResPerPage);
 				this.query.setStartIndex(this.maxResPerPage*this.currPage);				
-				videoCurrent = service.getFeed(query, VideoFeed.class);	
+				try {
+					videoCurrent = service.getFeed(query, VideoFeed.class);
+				} catch (ServiceException sEx) {}	
 				this.dumpToFile(videoCurrent);
 				System.out.println("PageCount: "+i + " resPerPage: "+this.maxResPerPage +" URI: "+query.getQueryUri().toString());
 				Thread.sleep(10);				
@@ -88,14 +90,9 @@ public class YouSearch {
 			this.wrt.close();
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ServiceException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 
@@ -121,7 +118,6 @@ public class YouSearch {
 		try {
 			this.wrt.write(toFile);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
