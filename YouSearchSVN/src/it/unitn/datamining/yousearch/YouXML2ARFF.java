@@ -59,6 +59,7 @@ public class YouXML2ARFF {
 								// check wheater the tag is valid
 								if(this.tagValidator.isValid(tag))
 									//arrayTag.add(this.stemmer.stem(tag));
+									// this stemmer is unuseful
 									arrayTag.add(tag);
 							}
 
@@ -136,7 +137,7 @@ public class YouXML2ARFF {
 	}
 
 	public static void main(String[] args) {
-		new YouXML2ARFF("dump_movie", "conv_dump_movie.arff");
+		new YouXML2ARFF("dump_rome", "conv_dump_rome.arff");
 	}
 
 }
