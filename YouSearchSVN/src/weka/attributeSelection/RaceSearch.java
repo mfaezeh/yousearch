@@ -22,6 +22,11 @@
 
 package weka.attributeSelection;
 
+import java.util.BitSet;
+import java.util.Enumeration;
+import java.util.Random;
+import java.util.Vector;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Option;
@@ -31,17 +36,12 @@ import weka.core.SelectedTag;
 import weka.core.Statistics;
 import weka.core.Tag;
 import weka.core.TechnicalInformation;
-import weka.core.TechnicalInformation.Type;
-import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformationHandler;
 import weka.core.Utils;
+import weka.core.TechnicalInformation.Field;
+import weka.core.TechnicalInformation.Type;
 import weka.experiment.PairedStats;
 import weka.experiment.Stats;
-
-import java.util.BitSet;
-import java.util.Enumeration;
-import java.util.Random;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

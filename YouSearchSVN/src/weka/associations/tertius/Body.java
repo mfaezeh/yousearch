@@ -24,11 +24,11 @@
 
 package weka.associations.tertius;
 
+import java.util.Iterator;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.RevisionUtils;
-
-import java.util.Iterator;
 
 /**
  * Class representing the body of a rule.

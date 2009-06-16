@@ -21,18 +21,18 @@
 
 package weka.associations;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.Enumeration;
+
+import weka.core.Drawable;
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.OptionHandler;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-import weka.core.Drawable;
 import weka.core.converters.ConverterUtils.DataSource;
-
-import java.util.Enumeration;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 
 /**
  * Class for evaluating Associaters.

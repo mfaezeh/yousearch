@@ -22,22 +22,20 @@
 
 package  weka.attributeSelection;
 
-import weka.core.OptionHandler;
-import weka.core.RevisionUtils;
-import weka.filters.Filter;
-import weka.core.Instances;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.BitSet;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Capabilities;
-import weka.core.Capabilities.Capability;
+import weka.core.Instances;
 import weka.core.Option;
 import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
-
-import java.util.Enumeration;
-import java.util.Vector;
-import java.util.ArrayList;
-import java.util.BitSet;
-import java.io.Serializable;
+import weka.core.Capabilities.Capability;
+import weka.filters.Filter;
 
 /**
  <!-- globalinfo-start -->

@@ -22,14 +22,13 @@
 
 package weka.associations;
 
+import java.io.Serializable;
+
 import weka.core.Capabilities;
 import weka.core.CapabilitiesHandler;
-import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.SerializedObject;
 import weka.core.Utils;
-
-import java.io.Serializable;
 
 /** 
  * Abstract scheme for learning associations. All schemes for learning

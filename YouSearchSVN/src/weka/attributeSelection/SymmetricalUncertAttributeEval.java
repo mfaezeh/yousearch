@@ -22,6 +22,9 @@
 
 package weka.attributeSelection;
 
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.ContingencyTables;
 import weka.core.Instance;
@@ -33,9 +36,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.Discretize;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

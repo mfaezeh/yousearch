@@ -22,15 +22,15 @@
 
 package weka.associations;
 
+import java.io.Serializable;
+import java.util.Hashtable;
+import java.util.Random;
+
 import weka.core.Instances;
 import weka.core.RevisionHandler;
 import weka.core.RevisionUtils;
 import weka.core.SpecialFunctions;
 import weka.core.Utils;
-
-import java.io.Serializable;
-import java.util.Hashtable;
-import java.util.Random;
 
 /**
  * Class implementing the prior estimattion of the predictive apriori algorithm 

@@ -24,14 +24,14 @@
 
 package weka.associations.tertius;
 
-import weka.core.Instance;
-import weka.core.Instances;
-import weka.core.RevisionHandler;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Iterator;
+
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.RevisionHandler;
 
 /**
  * Class representing a set of literals, being either the body or the head

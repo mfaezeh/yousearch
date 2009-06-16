@@ -22,6 +22,10 @@
 
 package  weka.attributeSelection;
 
+import java.util.BitSet;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.core.Capabilities;
 import weka.core.ContingencyTables;
 import weka.core.Instance;
@@ -37,10 +41,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.Discretize;
-
-import java.util.BitSet;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

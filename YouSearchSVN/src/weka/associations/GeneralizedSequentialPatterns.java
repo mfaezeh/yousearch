@@ -22,6 +22,11 @@
 
 package weka.associations;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.associations.gsp.Element;
 import weka.associations.gsp.Sequence;
 import weka.core.Attribute;
@@ -37,11 +42,6 @@ import weka.core.Utils;
 import weka.core.Capabilities.Capability;
 import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.Vector;
 
 /**
  <!-- globalinfo-start -->

@@ -12,7 +12,6 @@ import java.util.StringTokenizer;
 import weka.clusterers.XMeans;
 import weka.core.AlgVector;
 import weka.core.DistanceFunction;
-import weka.core.EuclideanDistance;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Utils;

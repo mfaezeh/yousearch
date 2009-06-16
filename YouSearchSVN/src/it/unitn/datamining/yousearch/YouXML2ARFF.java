@@ -9,29 +9,38 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
-
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+
+import weka.core.stemmers.SnowballStemmer;
 
 public class YouXML2ARFF {
 	private FileWriter fw = null;
 	private String inputFile = "";
 	private String outputFile = "";
+	private String keyword = "";
 	private YouTagGroupSimilarity similarityAgent = null;
+	private SnowballStemmer stemmer = null;
+	private YouTagValidator tagValidator = null; 
 
 	private void doConversion() {
 		Document doc;
 		try {
-
 			doc = DocumentBuilderFactory.newInstance().newDocumentBuilder()
 					.parse(this.inputFile);
-
-			NodeList items = doc.getElementsByTagName("video");
+			this.keyword = doc.getElementsByTagName("result").item(0).getAttributes().item(1).getTextContent();
+			
+			System.out.println(this.keyword);
+			//System.exit(1);
+			this.similarityAgent = new YouTagGroupSimilarity(this.keyword);
+			//this.stemmer = new SnowballStemmer();
+			this.tagValidator = new YouTagValidator();
+			NodeList items = doc.getElementsByTagName("video");			
 			// iterations over videos
 			for (int i = 0; i < items.getLength(); i++) {
 
-				String itemId = items.item(i).getAttributes()
-						.getNamedItem("id").getNodeValue();
+				String itemId = items.item(i).getAttributes().getNamedItem("id").getNodeValue();
+				String tag = "";
 				NodeList itemInfo = items.item(i).getChildNodes();
 				NodeList tags = null;
 				ArrayList<String> arrayTag;
@@ -45,9 +54,13 @@ public class YouXML2ARFF {
 						similarity = 0.0;
 						// iterations over tags
 						for (int t = 0; t < tags.getLength(); t++)
-							if (tags.item(t).getNodeName() == "key")
-								//System.out.println(tags.item(t).getFirstChild().getNodeValue());
-								arrayTag.add(tags.item(t).getFirstChild().getNodeValue());
+							if (tags.item(t).getNodeName() == "key"){
+								tag = tags.item(t).getFirstChild().getNodeValue();
+								// check wheater the tag is valid
+								if(this.tagValidator.isValid(tag))
+									//arrayTag.add(this.stemmer.stem(tag));
+									arrayTag.add(tag);
+							}
 
 						if (arrayTag.size() != 0) {
 							similarity = this.similarityAgent.getSimilarity(arrayTag.toArray(new String[0]));
@@ -108,7 +121,6 @@ public class YouXML2ARFF {
 		try {
 			this.inputFile = input;
 			this.outputFile = output;
-			this.similarityAgent = new YouTagGroupSimilarity();
 			fw = new FileWriter(output);
 			initARFF();
 			doConversion();
@@ -124,7 +136,7 @@ public class YouXML2ARFF {
 	}
 
 	public static void main(String[] args) {
-		new YouXML2ARFF("dump_movie", "conv_dump_movie");
+		new YouXML2ARFF("dump_movie", "conv_dump_movie.arff");
 	}
 
 }

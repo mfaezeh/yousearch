@@ -22,6 +22,11 @@
 
 package weka.attributeSelection;
 
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.Vector;
+
 import weka.classifiers.functions.SMO;
 import weka.core.Capabilities;
 import weka.core.Instances;
@@ -37,11 +42,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.MakeIndicator;
-
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

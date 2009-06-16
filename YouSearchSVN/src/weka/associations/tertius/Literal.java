@@ -25,10 +25,10 @@
 
 package weka.associations.tertius;
 
+import java.io.Serializable;
+
 import weka.core.Instance;
 import weka.core.RevisionHandler;
-
-import java.io.Serializable;
 
 /**
  * @author Peter A. Flach

@@ -22,6 +22,9 @@
 
 package weka.associations;
 
+import java.util.Enumeration;
+import java.util.Hashtable;
+
 import weka.core.AttributeStats;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -39,9 +42,6 @@ import weka.core.TechnicalInformation.Field;
 import weka.core.TechnicalInformation.Type;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
-
-import java.util.Enumeration;
-import java.util.Hashtable;
 
 /**
  <!-- globalinfo-start -->
