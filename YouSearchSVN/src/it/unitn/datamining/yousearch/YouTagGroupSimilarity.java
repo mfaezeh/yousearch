@@ -29,11 +29,13 @@ public class YouTagGroupSimilarity {
 		//System.out.println(tags.length);
 		
 		//for(int i = 0; i < tags.length; i++)
-			for(int j = 0; j < tags.length-1; j++)
-					retSim += (this.getSimilarityByPair(keyword, tags[j] ));
-					
-		
-		
+			for(int j = 0; j < tags.length; j++){
+					double temp =0.0;
+					temp = (this.getSimilarityByPair(keyword, tags[j] ));
+					retSim += temp;
+					System.out.println(tags[j]+ " " + temp);
+			}
+		System.out.println("----------------------------");
 		return retSim;
 	}
 }
