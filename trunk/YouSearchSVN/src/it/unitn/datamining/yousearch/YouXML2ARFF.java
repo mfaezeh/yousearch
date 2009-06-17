@@ -57,7 +57,7 @@ public class YouXML2ARFF {
 							if (tags.item(t).getNodeName() == "key"){
 								tag = tags.item(t).getFirstChild().getNodeValue();
 								// check wheater the tag is valid
-								System.out.println(tag);
+								
 								if(this.tagValidator.isValid(tag))
 									//arrayTag.add(this.stemmer.stem(tag));
 									// this stemmer is unuseful
@@ -95,7 +95,6 @@ public class YouXML2ARFF {
 
 		for (int i = 0; i < tags.size(); i++)
 			toFile += tags.get(i).toString() + " ";
-
 		try {
 			fw.write("\n"+String.valueOf(value) + "," + "\"" + toFile.trim() + "\"");
 		} catch (IOException e) {
