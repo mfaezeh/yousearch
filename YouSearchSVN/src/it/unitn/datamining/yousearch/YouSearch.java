@@ -71,8 +71,9 @@ public class YouSearch {
 		this.query.setOrderByRelevanceForLanguage("en");
 		this.query.addCategoryFilter(this.filterTag);	
 
+		System.out.println(query.getFeedUrl()+query.getQueryUri().toString()+"\n");
 		try {		
-			System.out.println(query.getFeedUrl()+query.getQueryUri().toString()+"\n");
+		
 			int maxCount = 0;		
 			this.wrt.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result id=\"result\" keyword=\""+this.keyword+"\">\n");
 			for(int i = 1; i<=this.maxTotPageRes; i++){
