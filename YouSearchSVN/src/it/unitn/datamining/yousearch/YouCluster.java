@@ -64,33 +64,86 @@ package it.unitn.datamining.yousearch;
   (default 10)
  */
 
+import weka.clusterers.XMeans;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
+import weka.filters.unsupervised.attribute.AddCluster;
+import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 public class YouCluster {
 	private DataSource source;
-	private YouXMeans clusterAgent;
+	//private YouXMeans clusterAgent;
+	private XMeans clusterAgent;	
 	private YouTagDistance tagDistance;
 	private Instances data;
 	
 	public YouCluster(String file, String[] options){
-		clusterAgent = new YouXMeans();
+		clusterAgent = new XMeans();
 		tagDistance = new YouTagDistance();
 		try {
 			source = new DataSource(file);
-			clusterAgent.setDistanceF(tagDistance);
-			//clusterAgent.setOptions(options);
+			//clusterAgent.setDistanceF(tagDistance);
 			data = source.getDataSet();
-			clusterAgent.buildClusterer(this.data);
+			data = this.ignoreTags(data);		
+			// actually, addClusterAssignment execute cluster
+			data = this.addClusterAssignment(data);			
+			System.out.println(data.toString());
+			System.out.println(clusterAgent.toString());			
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
-		System.out.println(clusterAgent.toString());
+		
 	}
+	 private Instances addClusterAssignment(Instances data) throws Exception {
+			int totInstances = data.numInstances();
+			Instances retVal = null;
+			Instance processed = null;
+			Instance current = null;
+			AddCluster add = new AddCluster();
+			
+			add.setClusterer(this.clusterAgent);
+		
+			add.setInputFormat(data);
+
+			for (int i = 0; i < totInstances; i++) {
+				current = data.instance(i);
+				add.input(current);
+			}
+
+			add.batchFinished();// filtra tutto in una volta
+			retVal = add.getOutputFormat();
+			while ((processed = add.output()) != null) {
+				retVal.add(processed);
+			}
+			return retVal;
+		}	
+	 private Instances ignoreTags(Instances data) throws Exception {
+			int totInstances = data.numInstances();
+			Instances retVal = null;
+			Instance processed = null;
+			Instance current = null;
+			Remove ignore = new Remove();
+			
+			ignore.setAttributeIndices("last");
+			ignore.setInputFormat(data);
+			
+			for (int i = 0; i < totInstances; i++) {
+				current = data.instance(i);
+				ignore.input(current);
+			}
+
+			ignore.batchFinished();// filtra tutto in una volta
+			
+			retVal = ignore.getOutputFormat();
+			while ((processed = ignore.output()) != null) {
+				retVal.add(processed);
+			}
+			return retVal;
+		}	
 	
 	 private Instances transformAttributesFromStringToWordArray(Instances data) throws Exception {
 			int totInstances = data.numInstances();
@@ -134,7 +187,7 @@ public class YouCluster {
 		}else{
 			options = args;
 		}
-		new YouCluster("conv_dump_movie.arff",options);
+		new YouCluster("conv_dump_rome.arff",options);
 	}
 
 }
