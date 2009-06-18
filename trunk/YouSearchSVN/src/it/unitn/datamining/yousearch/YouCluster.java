@@ -86,11 +86,17 @@ public class YouCluster {
 			source = new DataSource(file);
 			//clusterAgent.setDistanceF(tagDistance);
 			data = source.getDataSet();
+			
 			//data = this.ignoreTags(data);		
 			// actually, addClusterAssignment execute cluster
 			data = this.addClusterAssignment(data);
-			//System.out.println(data.toString());
-			System.out.println(clusterAgent.toString());			
+			System.out.println(data.toString());
+			//clusterAgent.buildClusterer(data);
+			System.out.println(clusterAgent.toString());
+			System.out.println("My Centers");
+			Instances centers = clusterAgent.getNearestFromCentroids();
+			for(int i=0; i<centers.numInstances(); i++)
+				System.out.println(centers.instance(i));
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
