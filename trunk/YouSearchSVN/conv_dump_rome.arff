@@ -1,40 +1,18 @@
 @relation tags
 
 @attribute similarity numeric
+@attribute sum numeric
 @attribute tags string
+@attribute video_id string
 
 @data
 
 
-5.96675200279337,"roma rome city europa italy italia"
-5.78702379264473,"djokovic nadal tennis rome masters sports imitation atp nole rafa imitates funny trophy ceremony livetennis"
-5.706966404728626,"HBO Rome Caesar Egypt Pompey Ptolemy"
-5.5,"Triarii RosesforRome Emperors reliefs Rome RomanEmpire"
-5.598823650290856,"Billy Connolly Scotsmen Rome Stand-up"
-5.5573147147535416,"HBO Rome podcast scenes women sex"
-5.673150661804181,"hbo rome philippi battle roman legionaire"
-5.5,"rome hbo"
-5.545800640571098,"HBO Rome scenes slavery podcast slaves"
-5.644387452453769,"discoyvery channel surprising history rome documentary"
-5.547999340301057,"Jim Rome Sweatpants Carl Rosemead Jungle"
-5.602520747860894,"Paddy Kelly Rome 07-10-2004"
-5.557546040252736,"Young Rome"
-5.726033534256853,"chemical brothers live rome concert music june"
-5.591216432551355,"Jim Rome Halloween Freaks Jungle"
-5.5,"Rome Lucius Pullo Gladiators"
-5.545938945797057,"shadow rome"
-5.548272756459135,"rome tongue pullo"
-5.773037436142404,"Rome Battle Philippi Brutus Cassius music"
-5.590891025168696,"rome hbo agrippa octavia atia romans"
-5.5,"rome juliet"
-5.798069905894362,"titus pullo arena fight rome season ray stevenson"
-5.546015807682362,"Legion Rome"
-5.547309880531231,"Nadal Djokovic Rome Impersonation"
-0.0,"jim rome show golf guy likes to fight guy softball guy"
-5.671357279940732,"Building Rome Gangster Baby"
-5.547158063050459,"Zuleikhha Robinson Rome"
-5.5,"rome"
-5.5,"steph rome"
-5.599665722581583,"Cantor David Rome"
-5.572859656221608,"rome china"
-5.547581236694928,"Solidarity Rome"
+0.9944586671322283,5.96675200279337,"roma rome city europa italy italia","D_kkzk1J8Aw"
+0.3858015861763153,5.78702379264473,"djokovic nadal tennis rome masters sports imitation atp nole rafa imitates funny trophy ceremony livetennis","DQqaMb0J8EM"
+0.951161067454771,5.706966404728626,"HBO Rome Caesar Egypt Pompey Ptolemy","33fWwJx-Q0U"
+0.9166666666666666,5.5,"Triarii RosesforRome Emperors reliefs Rome RomanEmpire","Gig_QmKtHn0"
+1.1197647300581712,5.598823650290856,"Billy Connolly Scotsmen Rome Stand-up","oKMQKgSnGy8"
+0.9262191191255903,5.5573147147535416,"HBO Rome podcast scenes women sex","10lHcOJjKv8"
+0.9455251103006969,5.673150661804181,"hbo rome philippi battle roman legionaire","0wQ_6cVXTQk"
+2.75,5.5,"rome hbo","VBZtFLkjioY"

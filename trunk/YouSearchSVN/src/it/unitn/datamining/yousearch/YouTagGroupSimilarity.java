@@ -23,19 +23,25 @@ public class YouTagGroupSimilarity {
 			return 0.0;
 	}
 	
-	double getSimilarity(String[] tags){
+	YouSimilarityDTO getSimilarity(String[] tags, String videoId){
 
-		double retSim = 0.0;
-		//System.out.println(tags.length);
-		
-		//for(int i = 0; i < tags.length; i++)
+		YouSimilarityDTO retSim = new YouSimilarityDTO();
+		retSim.videoId = videoId;
 			for(int j = 0; j < tags.length; j++){
 					double temp =0.0;
 					temp = (this.getSimilarityByPair(keyword, tags[j] ));
-					retSim += temp;
+					retSim.sum += temp;
 					System.out.println(tags[j]+ " " + temp);
 			}
+		retSim.similarity = retSim.sum / tags.length;
+		System.out.println("groupInfo:\n sum: "+retSim.sum+"\n sim: "+retSim.similarity);			
 		System.out.println("----------------------------");
 		return retSim;
 	}
+}
+
+class YouSimilarityDTO{
+	public double similarity = 0.0;
+	public double sum = 0.0;
+	public String videoId = "";
 }

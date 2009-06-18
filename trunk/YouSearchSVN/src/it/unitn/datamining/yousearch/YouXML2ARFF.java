@@ -44,14 +44,14 @@ public class YouXML2ARFF {
 				NodeList itemInfo = items.item(i).getChildNodes();
 				NodeList tags = null;
 				ArrayList<String> arrayTag;
-				double similarity = 0.0;
+				YouSimilarityDTO similarityDTO = new YouSimilarityDTO();
 
 				// iterations over video info (title,tags)
 				for (int j = 0; j < itemInfo.getLength(); j++) {
 					if (itemInfo.item(j).getNodeName() == "keywords") {
 						tags = itemInfo.item(j).getChildNodes();
 						arrayTag = new ArrayList<String>();
-						similarity = 0.0;
+						similarityDTO.similarity = 0.0;
 						// iterations over tags
 						for (int t = 0; t < tags.getLength(); t++)
 							if (tags.item(t).getNodeName() == "key"){
@@ -65,10 +65,10 @@ public class YouXML2ARFF {
 							}
 
 						if (arrayTag.size() != 0) {
-							similarity = this.similarityAgent.getSimilarity(arrayTag.toArray(new String[0]));
+							similarityDTO = this.similarityAgent.getSimilarity(arrayTag.toArray(new String[0]),itemId);
 						}
 						//System.out.println(arrayTag.size());
-						appendToFile(arrayTag, similarity);
+						appendToFile(arrayTag, similarityDTO);
 					}
 
 				}
@@ -86,8 +86,12 @@ public class YouXML2ARFF {
 		}
 	}
 
-	private void appendToFile(ArrayList<String> tags, double value) {
-
+	private void appendToFile(ArrayList<String> tags, YouSimilarityDTO value) {
+/*
+  			fw.write("@attribute similarity numeric\n");	
+			fw.write("@attribute tags string\n\n");
+			fw.write("@attribute video_id string\n");
+ */
 		if (this.fw == null)
 			return;
 
@@ -96,7 +100,7 @@ public class YouXML2ARFF {
 		for (int i = 0; i < tags.size(); i++)
 			toFile += tags.get(i).toString() + " ";
 		try {
-			fw.write("\n"+String.valueOf(value) + "," + "\"" + toFile.trim() + "\"");
+			fw.write("\n"+String.valueOf(value.similarity) + "," + String.valueOf(value.sum) + "," + "\"" + toFile.trim() + "\"" + "," +"\""+String.valueOf(value.videoId)+"\"");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -110,7 +114,9 @@ public class YouXML2ARFF {
 		try {
 			fw.write("@relation tags\n\n");
 			fw.write("@attribute similarity numeric\n");
-			fw.write("@attribute tags string\n\n");	
+			fw.write("@attribute sum numeric\n");				
+			fw.write("@attribute tags string\n");
+			fw.write("@attribute video_id string\n\n");			
 			fw.write("@data\n\n");				
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
