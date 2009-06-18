@@ -86,10 +86,10 @@ public class YouCluster {
 			source = new DataSource(file);
 			//clusterAgent.setDistanceF(tagDistance);
 			data = source.getDataSet();
-			data = this.ignoreTags(data);		
+			//data = this.ignoreTags(data);		
 			// actually, addClusterAssignment execute cluster
-			data = this.addClusterAssignment(data);			
-			System.out.println(data.toString());
+			data = this.addClusterAssignment(data);
+			//System.out.println(data.toString());
 			System.out.println(clusterAgent.toString());			
 			
 		} catch (Exception e) {
@@ -105,9 +105,11 @@ public class YouCluster {
 			Instance current = null;
 			AddCluster add = new AddCluster();
 			
+			this.clusterAgent.setUseKDTree(false);
 			add.setClusterer(this.clusterAgent);
-		
+			//add.setIgnoredAttributeIndices("3-last");
 			add.setInputFormat(data);
+			
 
 			for (int i = 0; i < totInstances; i++) {
 				current = data.instance(i);
@@ -128,7 +130,8 @@ public class YouCluster {
 			Instance current = null;
 			Remove ignore = new Remove();
 			
-			ignore.setAttributeIndices("last");
+			ignore.setAttributeIndicesArray(new int[]{2,3});
+			ignore.setInvertSelection(true);
 			ignore.setInputFormat(data);
 			
 			for (int i = 0; i < totInstances; i++) {
@@ -172,7 +175,6 @@ public class YouCluster {
 		/* PROBLEMI NOTI: l'algoritmo XMeans modifica i volori durante il calcolo
 		 * Durante lo splitCenter la funzione richiede valori double (potrebbe essere il valore di similitudine)
 		 * Bisogna riscrivere la funzione splitCenter in modo che tenga conto anche dei tags
-		 * 
 		 */
 		String[] options;
 		
