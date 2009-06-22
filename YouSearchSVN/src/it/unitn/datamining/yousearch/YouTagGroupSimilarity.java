@@ -17,9 +17,11 @@ public class YouTagGroupSimilarity {
 		if((first != null) && (second != null) && (first.equalsIgnoreCase(second)))
 			return 5.5;
 		
-		if((first != null) && (second != null))
-			return similarityAgent.getSimilarity(first, second);
-		else
+		if((first != null) && (second != null)){
+			
+			double temp = similarityAgent.getSimilarity(first, second);
+			return ( temp > 1000 )? 5.2 : temp;
+		}else
 			return 0.0;
 	}
 	
