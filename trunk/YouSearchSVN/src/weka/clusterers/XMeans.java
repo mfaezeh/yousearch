@@ -1615,8 +1615,8 @@ public class XMeans extends RandomizableClusterer implements
 	 * 
 	 * @return an enumeration of all the available options
 	 **/
-	public Enumeration listOptions() {
-		Vector result = new Vector();
+	public Enumeration<Option> listOptions() {
+		Vector<Option> result = new Vector<Option>();
 
 		result.addElement(new Option("\tmaximum number of overall iterations\n"
 				+ "\t(default 1).", "I", 1, "-I <num>"));
@@ -1626,8 +1626,7 @@ public class XMeans extends RandomizableClusterer implements
 						+ "\tthe Improve-Parameter part \n"
 						+ "\t(default 1000).", "M", 1, "-M <num>"));
 
-		result
-				.addElement(new Option(
+		result.addElement(new Option(
 						"\tmaximum number of iterations in the kMeans loop\n"
 								+ "\tfor the splitted centroids in the Improve-Structure part \n"
 								+ "\t(default 1000).", "J", 1, "-J <num>"));
@@ -1677,7 +1676,7 @@ public class XMeans extends RandomizableClusterer implements
 		result.addElement(new Option("\tThe debug vectors file.", "Y", 1,
 				"-Y <file name>"));
 
-		Enumeration en = super.listOptions();
+		Enumeration<Option> en = super.listOptions();
 		while (en.hasMoreElements())
 			result.addElement(en.nextElement());
 
@@ -2409,10 +2408,10 @@ public class XMeans extends RandomizableClusterer implements
 	 */
 	public String[] getOptions() {
 		int i;
-		Vector result;
+		Vector<String> result;
 		String[] options;
 
-		result = new Vector();
+		result = new Vector<String>();
 
 		result.add("-I");
 		result.add("" + getMaxIterations());
