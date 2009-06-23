@@ -2532,6 +2532,7 @@ public class XMeans extends RandomizableClusterer implements
 			temp.append("\n\nDistortion: "
 					+ Utils.doubleToString(Utils.sum(m_Mle), 6) + "\n");
 		temp.append("BIC-Value : " + Utils.doubleToString(m_Bic, 6) + "\n");
+		temp.append("Number of instances: "+m_Instances.numInstances()+"\n");
 		return temp.toString();
 	}
 
