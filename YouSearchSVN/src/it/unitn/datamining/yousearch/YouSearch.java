@@ -24,7 +24,7 @@ public class YouSearch {
 	private YouTubeQuery query;
 	private CategoryFilter filterTag;
 	
-	private int maxTotPageRes = 19; // google api allows less then 1000 items 
+	private int maxTotPageRes = 20;//9; // google api allows less then 1000 items 
 	private int maxResPerPage = 50;
 	private int currPage = 0; // 0-based
 	
@@ -79,13 +79,13 @@ public class YouSearch {
 			for(int i = 1; i<=this.maxTotPageRes; i++){
 				this.currPage = i;
 				this.query.setMaxResults(this.maxResPerPage);
-				this.query.setStartIndex(this.maxResPerPage*this.currPage);				
+				this.query.setStartIndex((this.maxResPerPage*this.currPage-50)+1);				
 				try {
 					videoCurrent = service.getFeed(query, VideoFeed.class);
-				} catch (ServiceException sEx) {}	
+				} catch (ServiceException sEx) {System.out.println("ECCEZIONE");}	
 				this.dumpToFile(videoCurrent);
 				System.out.println("PageCount: "+i + " resPerPage: "+this.maxResPerPage +" URI: "+query.getQueryUri().toString());
-				Thread.sleep(10);				
+				Thread.sleep(1000);		
 			}
 			this.wrt.write("</result>");
 			this.wrt.close();
