@@ -297,9 +297,9 @@ public class AddCluster
    *
    * @return an enumeration of all the available options.
    */
-  public Enumeration listOptions() {
+  public Enumeration<Option> listOptions() {
     
-    Vector newVector = new Vector(2);
+    Vector<Option> newVector = new Vector<Option>(2);
     
     newVector.addElement(new Option(
 	      "\tFull class name of clusterer to use, followed\n"
