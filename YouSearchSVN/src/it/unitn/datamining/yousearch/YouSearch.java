@@ -20,7 +20,6 @@ public class YouSearch {
 	private FileWriter wrt;
 	private YouTubeService service;
 	private VideoFeed videoCurrent;
-	private VideoFeed videoNext;
 	private YouTubeQuery query;
 	private CategoryFilter filterTag;
 	private YouSearchResult resultDTO;
@@ -88,10 +87,7 @@ public class YouSearch {
 
 		System.out.println(query.getFeedUrl() + query.getQueryUri().toString()
 				+ "\n");
-		try {
-
-			int maxCount = 0;
-			
+		try {			
 			if(this.needDump)
 				this.wrt.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result id=\"result\" keyword=\""+ this.keyword + "\">\n");
 			
