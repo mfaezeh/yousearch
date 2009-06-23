@@ -143,7 +143,7 @@ public class YouXML2ARFF {
 	}
 
 	public static void main(String[] args) {
-		new YouXML2ARFF("dump_rome", "conv_dump_rome.arff");
+		new YouXML2ARFF("dump_movie", "conv_dump_movie.arff");
 	}
 
 }

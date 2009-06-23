@@ -420,7 +420,7 @@ public class XMeans extends RandomizableClusterer implements
 		// can clusterer handle the data?
 		// getCapabilities().testWithFail(data);
 
-		System.out.println("FIRST: " + data.instance(2).stringValue(3));
+		//System.out.println("FIRST: " + data.instance(2).stringValue(3));
 
 		m_NumSplits = 0;
 		m_NumSplitsDone = 0;
@@ -1303,7 +1303,7 @@ public class XMeans extends RandomizableClusterer implements
 		newCenter = c2.getAsInstance(model, random);
 		children.add(newCenter);
 		PFD(D_FOLLOWSPLIT, "second child " + newCenter);
-		System.out.println("splits attr(2): " + newCenter.stringValue(3));
+		//System.out.println("splits attr(2): " + newCenter.stringValue(3));
 		return children;
 	}
 
@@ -1351,7 +1351,7 @@ public class XMeans extends RandomizableClusterer implements
 		Instances clusterCenters = new Instances(model, numClusters);
 		m_NumClusters = numClusters;
 
-		System.out.println("MAKECENTERSRANDOMLY: " + model.numAttributes());
+		//System.out.println("MAKECENTERSRANDOMLY: " + model.numAttributes());
 
 		// makes the new centers randomly
 		for (int i = 0; i < numClusters; i++) {
