@@ -2,8 +2,6 @@ package it.unitn.datamining.yousearch;
 
 public class YouTagGroupSimilarity {
 	
-	private static double MAX_BOUND = 5.5;
-	private static double NORMAL_FACTOR = 1 / MAX_BOUND;
 	private YouSimilarity similarityAgent = null;
 	private String keyword;
 	
