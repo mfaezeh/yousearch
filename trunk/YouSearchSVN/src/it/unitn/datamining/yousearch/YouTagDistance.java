@@ -82,8 +82,6 @@ import weka.core.neighboursearch.PerformanceStats;
 public class YouTagDistance
   extends NormalizableDistance
   implements Cloneable, TechnicalInformationHandler {
-private static final double MIN_AVERAGE = 0.05;
-private static final double MIN_SUM 	= 5.5;
   /** for serialization. */
   private static final long serialVersionUID = 1068606253458807903L;
 

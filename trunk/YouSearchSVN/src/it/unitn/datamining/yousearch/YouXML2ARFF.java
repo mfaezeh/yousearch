@@ -12,15 +12,12 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import weka.core.stemmers.SnowballStemmer;
-
 public class YouXML2ARFF {
 	private FileWriter fw = null;
 	private String inputFile = "";
 	private String outputFile = "";
 	private String keyword = "";
 	private YouTagGroupSimilarity similarityAgent = null;
-	private SnowballStemmer stemmer = null;
 	private YouTagValidator tagValidator = null; 
 
 	private void doConversion() {
