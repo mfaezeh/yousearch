@@ -82,7 +82,7 @@ import weka.core.neighboursearch.PerformanceStats;
 public class YouTagDistance
   extends NormalizableDistance
   implements Cloneable, TechnicalInformationHandler {
-private static final double MIN_AVERAGE = 0.5;
+private static final double MIN_AVERAGE = 0.05;
 private static final double MIN_SUM 	= 5.5;
   /** for serialization. */
   private static final long serialVersionUID = 1068606253458807903L;
@@ -156,66 +156,26 @@ private static final double MIN_SUM 	= 5.5;
 	  double tag1n = fsum/favg;
 	  double tag2n = ssum/savg;
 	  
-	  if ((tag1n < 3.1) && (tag2n<3.1)) {
-		  first.setValue(0, 0.0);
+	  if ((tag1n < 2.1) && (tag2n<2.1)) {
+		  first.setValue(0, 0.1);
 		  first.setValue(1, 5.0);
-		  second.setValue(0, 0.0);
+		  second.setValue(0, 0.1);
 		  second.setValue(1, 5.0);
 		  return 0.0; 
 	  }
-	  else if (tag1n < 3.1){
-		  first.setValue(0, 0.0);
+	  else if (tag1n < 2.1){
+		  first.setValue(0, 0.1);
 		  first.setValue(1, 5.0);
 	  }
-	  else if (tag2n < 3.1){
-		  second.setValue(0, 0.0);
+	  else if (tag2n < 2.1){
+		  second.setValue(0, 0.1);
 		  second.setValue(1, 5.0);
 	  }
 	  //VERIFICARE IL NUMERO DI TAG NEI DUE VIDEO,se < 3.1 in entrambi la distanza è 0.
 	  //altrimenti se uno dei due è < 3.1 la distanza è 1000,altrimenti avanti
-	  boolean avg1check = favg <  YouTagDistance.MIN_AVERAGE;
-	  boolean avg2check = savg <  YouTagDistance.MIN_AVERAGE;
-	  boolean sum1check = fsum <= YouTagDistance.MIN_SUM;
-	  boolean sum2check = ssum <= YouTagDistance.MIN_SUM;
-	  
-	  //verifico se la media è < di 1 in entrambi i video. In tal caso non c'è distanza (entrambi son outliers)
-	  //se una media è >1 e l'altra è <1 la distanza non è 0,ma 1000
-	  if (avg1check) {
-		  first.setValue(0, 0.0);
-		  first.setValue(1, 5.0);
-		  if (avg2check) {
-			  second.setValue(0, 0.0);
-			  second.setValue(1, 5.0);
-			  return 0.0;
-		  }
-		  else return 1000.0;
-	  }
-	  else if (avg2check) {
-		  second.setValue(0, 0.0);
-		  second.setValue(1, 5.0);
-		  return 1000.0;
-	  }
-	  
-	//verifico se la somma è < di 5.5 in entrambi i video. In tal caso non c'è distanza (entrambi son outliers)
-	//se una somma è >5.5 e l'altra è <5.5 la distanza non è 0,ma 1000
-	  if (sum1check) {
-		  first.setValue(0, 0.0);
-		  first.setValue(1, 5.0);
-		  if (sum2check) {
-			  second.setValue(0, 0.0);
-			  second.setValue(1, 5.0);
-			  return 0.0;
-		  }
-		  else return 1000.0;
-	  }
-	  else if (sum2check) {
-		  second.setValue(0, 0.0);
-		  second.setValue(1, 5.0);
-		  return 1000.0;
-	  }
-	  
-	  
-    return Math.sqrt(distance(first, second, Double.POSITIVE_INFINITY));
+	  	  
+	  return Math.abs((fsum-ssum)*(favg-savg));
+    //return Math.sqrt(distance(first, second, Double.POSITIVE_INFINITY));
   }
   
   /**

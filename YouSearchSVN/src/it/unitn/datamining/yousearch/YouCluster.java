@@ -84,9 +84,10 @@ public class YouCluster {
 		tagDistance = new YouTagDistance();
 		try {
 			source = new DataSource(file);
-			//clusterAgent.setDistanceF(tagDistance);
+			clusterAgent.setDistanceF(tagDistance);
 			data = source.getDataSet();
-			
+			clusterAgent.setMinNumClusters(2);
+			clusterAgent.setMaxNumClusters(8);
 			//data = this.ignoreTags(data);		
 			// actually, addClusterAssignment execute cluster
 			data = this.addClusterAssignment(data);
@@ -182,20 +183,9 @@ public class YouCluster {
 		 * Durante lo splitCenter la funzione richiede valori double (potrebbe essere il valore di similitudine)
 		 * Bisogna riscrivere la funzione splitCenter in modo che tenga conto anche dei tags
 		 */
-		String[] options;
+		String[] options=null;
 		
-		if(args.length < 1){
-			options = new String[6];
-			options[0]="-I";
-			options[1]="3";
-			options[2]="-L";
-			options[3]="2";
-			options[4]="-H";
-			options[5]="10";
-		}else{
-			options = args;
-		}
-		new YouCluster("conv_dump_rome.arff",options);
+		new YouCluster("conv_dump_movie.arff",options);
 	}
 
 }
