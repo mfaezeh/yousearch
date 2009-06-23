@@ -61,7 +61,12 @@ public abstract class SimilarityMeasure
 	 */
 	private Map<String,Double> cache = new LinkedHashMap<String,Double>(16,0.75f,true)
 	{
-        public boolean removeEldestEntry(Map.Entry<String,Double> eldest)
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 2992196401839070665L;
+
+		public boolean removeEldestEntry(Map.Entry<String,Double> eldest)
         {
             //if the size is less than zero then the user is asking us
         	//not to limit the size of the cache so return false
