@@ -2,6 +2,7 @@ package it.unitn.datamining.yousearch;
 
 import java.io.ByteArrayInputStream;
 
+import weka.clusterers.XMeans;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
@@ -9,7 +10,7 @@ import weka.filters.unsupervised.attribute.AddCluster;
 
 public class YouCluster {
 	private DataSource source;
-	//private YouXMeans clusterAgent;
+	//private XMeans clusterAgent;
 	private YouXMeans clusterAgent;	
 	private YouTagDistance tagDistance;
 	private Instances data;
@@ -55,7 +56,7 @@ public class YouCluster {
 			data = this.addClusterAssignment(data);
 			System.out.println(data.toString());
 			//clusterAgent.buildClusterer(data);
-			System.out.println(clusterAgent.toString());
+			//System.out.println(clusterAgent.toString());
 			System.out.println("My Centers");
 			Instances centers = clusterAgent.getNearestFromCentroids();
 			for(int i=0; i<centers.numInstances(); i++)
