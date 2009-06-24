@@ -208,8 +208,9 @@ public class YouTagDistance
 	  //altrimenti se uno dei due ï¿½ < 3.1 la distanza ï¿½ 1000,altrimenti avanti
 	  common_tag =(common_tag<1)?0.001:common_tag;
 	  //return (((Math.abs(fsum-ssum))/common_tag)*((Math.abs(favg-savg))/common_tag)); //QUESTA SOLUZIONE DA DEI CLUSTER MOLTO STRANI,Da verificare
-	  //return (Math.abs(favg-savg))/common_tag; //Cluster vari,però idealmente è una fuzione ridicola
-		return Math.abs((fsum-ssum)*(favg-savg))/common_tag; //quella di stamattina
+	  return (Math.abs(favg-savg))/common_tag; //Cluster vari,però idealmente è una fuzione ridicola,da verificare con il browser
+	  //return (Math.abs(fsum-ssum))/common_tag; //RISULTATO PIETOSO
+		//return Math.abs((fsum-ssum)*(favg-savg))/common_tag; //quella di stamattina
     //return Math.sqrt(distance(first, second, Double.POSITIVE_INFINITY));
   }
   
