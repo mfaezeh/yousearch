@@ -21,6 +21,8 @@
 
 package it.unitn.datamining.yousearch;
 
+import java.util.ArrayList;
+
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.NormalizableDistance;
@@ -138,6 +140,18 @@ public class YouTagDistance
     return result;
   }
   
+  private double getCountCommonTag(String tag1, String tag2) {
+		String[] tagArr1 = tag1.split(" ");
+		String[] tagArr2 = tag2.split(" ");
+		int count = 0;
+		for (String tag : tagArr1) {
+			for (String tagComp : tagArr2) {
+				if(tag.equalsIgnoreCase(tagComp))
+					count++;
+			}
+		}
+		return Double.valueOf(count);
+	}
   /**
    * Calculates the distance between two instances.
    * 
@@ -150,6 +164,8 @@ public class YouTagDistance
 	  double savg = second.value(0);
 	  double fsum = first.value(1);
 	  double ssum = second.value(1);
+	  
+	  double common_tag = getCountCommonTag(first.stringValue(2),second.stringValue(2));
 	  
 	  if ((favg==0.1) && (savg == 0.1) )
 		  return 0.0;
@@ -190,8 +206,8 @@ public class YouTagDistance
 	  }
 	  //VERIFICARE IL NUMERO DI TAG NEI DUE VIDEO,se < 3.1 in entrambi la distanza � 0.
 	  //altrimenti se uno dei due � < 3.1 la distanza � 1000,altrimenti avanti
-	  	  
-	  return Math.abs((fsum-ssum)*(favg-savg));
+	  common_tag =(common_tag<1)?0.001:common_tag;
+		  return Math.abs((fsum-ssum)*(favg-savg))/common_tag;
     //return Math.sqrt(distance(first, second, Double.POSITIVE_INFINITY));
   }
   
