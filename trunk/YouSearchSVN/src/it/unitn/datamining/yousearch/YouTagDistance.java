@@ -151,6 +151,25 @@ public class YouTagDistance
 	  double fsum = first.value(1);
 	  double ssum = second.value(1);
 	  
+	  if ((favg==0.1) && (savg == 0.1) )
+		  return 0.0;
+	  else{		  
+		  if (favg == 0.1)
+				if ((ssum / savg) < 2.1) {
+					second.setValue(0, 0.1);
+					second.setValue(1, 5.0);
+					return 0.0;
+				} else
+					return 1000;
+			else if (savg == 0.1)
+				if ((fsum / favg) < 2.1) {
+					first.setValue(0, 0.1);
+					first.setValue(1, 5.0);
+					return 0.0;
+				} else
+					return 1000;
+	  }
+	  
 	  double tag1n = fsum/favg;
 	  double tag2n = ssum/savg;
 	  
@@ -169,8 +188,8 @@ public class YouTagDistance
 		  second.setValue(0, 0.1);
 		  second.setValue(1, 5.0);
 	  }
-	  //VERIFICARE IL NUMERO DI TAG NEI DUE VIDEO,se < 3.1 in entrambi la distanza è 0.
-	  //altrimenti se uno dei due è < 3.1 la distanza è 1000,altrimenti avanti
+	  //VERIFICARE IL NUMERO DI TAG NEI DUE VIDEO,se < 3.1 in entrambi la distanza ï¿½ 0.
+	  //altrimenti se uno dei due ï¿½ < 3.1 la distanza ï¿½ 1000,altrimenti avanti
 	  	  
 	  return Math.abs((fsum-ssum)*(favg-savg));
     //return Math.sqrt(distance(first, second, Double.POSITIVE_INFINITY));
