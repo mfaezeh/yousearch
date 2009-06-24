@@ -553,6 +553,7 @@ public class YouTagValidator {
 	    this.regExprs.add("zero");		
 		this.regExprs.add("([0-9]+)");
 		this.regExprs.add("[^a-zA-Z0-9]");
+		this.regExprs.add("\\?+");
 	}
 	
 	
