@@ -164,9 +164,10 @@ public class YouSearch {
 							"&amp;") + "</title>\n";
 			toFile += "\t\t<keywords>\n";
 			for (int j = 0; j < videoKeywords.size(); j++) {
-				toFile += "\t\t\t<key>"
-						+ videoKeywords.get(j).replaceAll("&", "&amp;")
-						+ "</key>\n";
+				String tmpTag = videoKeywords.get(j).replaceAll("&", "&amp;");
+				String[] tmpTagArr = tmpTag.split(" ");
+				for(int k=0; k< tmpTagArr.length; k++)
+					toFile += "\t\t\t<key>"	+ tmpTagArr[k]	+ "</key>\n";
 			}
 
 			toFile += "\t\t</keywords>\n";
