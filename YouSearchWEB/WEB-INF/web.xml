@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+     version="2.4">
+
+		<welcome-file-list>
+				    <!-- Use index.swf if present, or splash.jsp, otherwise just look for the normal defaults -->
+				    <welcome-file>index.swf</welcome-file>
+				    <welcome-file>splash.jsp</welcome-file>
+				    <welcome-file>index.html</welcome-file>
+				    <welcome-file>index.htm</welcome-file>
+				    <welcome-file>index.jsp</welcome-file>
+		</welcome-file-list>
+
+        <servlet>
+                <servlet-name>youcluster</servlet-name>
+                <servlet-class>YouClusterServlet</servlet-class>
+        </servlet> 
+        <servlet>
+                <servlet-name>yousearch</servlet-name>
+                <servlet-class>YouSearchServlet</servlet-class>
+        </servlet> 
+
+        <servlet-mapping>
+             		<!-- For any URL starting with /content/, the rewriter servlet will be called -->
+                <servlet-name>youcluster</servlet-name>
+                <url-pattern>/cluster/*</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+             		<!-- For any URL starting with /content/, the rewriter servlet will be called -->
+                <servlet-name>yousearch</servlet-name>
+                <url-pattern>/search/*</url-pattern>
+        </servlet-mapping> 
+
+
+
+<!-- http://wiki.metawerx.net/wiki/Web.xml -->
+</web-app>
