@@ -2,7 +2,6 @@ package it.unitn.datamining.yousearch;
 
 import java.io.ByteArrayInputStream;
 
-import weka.clusterers.XMeans;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
