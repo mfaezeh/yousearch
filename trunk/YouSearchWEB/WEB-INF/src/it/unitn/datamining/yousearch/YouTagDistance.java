@@ -164,26 +164,6 @@ public class YouTagDistance
 	  double ssum = second.value(1);
 	  
 	  double common_tag = getCountCommonTag(first.stringValue(2),second.stringValue(2));
-	  
-	  if ((favg==0.1) && (savg == 0.1) )
-		  return 0.0;
-	  else{		  
-		  if (favg == 0.1)
-				if ((ssum / savg) < 2.1) {
-					second.setValue(0, 0.1);
-					second.setValue(1, 5.0);
-					return 0.0;
-				} else
-					return 1000;
-			else if (savg == 0.1)
-				if ((fsum / favg) < 2.1) {
-					first.setValue(0, 0.1);
-					first.setValue(1, 5.0);
-					return 0.0;
-				} else
-					return 1000;
-	  }
-	  
 	  double tag1n = fsum/favg;
 	  double tag2n = ssum/savg;
 	  
@@ -202,23 +182,33 @@ public class YouTagDistance
 		  second.setValue(0, 0.1);
 		  second.setValue(1, 5.0);
 	  }
-	  //VERIFICARE IL NUMERO DI TAG NEI DUE VIDEO,se < 3.1 in entrambi la distanza � 0.
-	  //altrimenti se uno dei due � < 3.1 la distanza � 1000,altrimenti avanti
+	  
+	  if ((favg==0.1) && (savg == 0.1) )
+		  return 0.0;
+	  else{		  
+		  if (favg == 0.1)
+				if ((tag2n) < 2.1) {
+					second.setValue(0, 0.1);
+					second.setValue(1, 5.0);
+					return 0.0;
+				} else
+					return 1000;
+			else if (savg == 0.1)
+				if ((tag1n) < 2.1) {
+					first.setValue(0, 0.1);
+					first.setValue(1, 5.0);
+					return 0.0;
+				} else
+					return 1000;
+	  }
 	  common_tag =(common_tag<1)?0.001:common_tag;
-	  //HO PROVATO QUESTA NUOVA FUNZIONE. DA DEI CENTROIDI TOTALMENTE DIVERSI
-	  //Mi sembrano PIU rappresentativi,ma mi manca la parte browser per testare!
 	  return Math.abs(
 				((Math.pow(fsum,2)-Math.pow(ssum,2))
 				)*
 				((Math.pow(favg,2)-Math.pow(savg,2))
 				))
 		/common_tag; 
-	  
-	  //return (((Math.abs(fsum-ssum))/common_tag)*((Math.abs(favg-savg))/common_tag)); //QUESTA SOLUZIONE DA DEI CLUSTER MOLTO STRANI,Da verificare
-	  //return (Math.abs(favg-savg))/common_tag; //Cluster vari,per� idealmente � una fuzione ridicola,da verificare con il browser
-	  //return (Math.abs(fsum-ssum))/common_tag; //RISULTATO PIETOSO
-		//return Math.abs((fsum-ssum)*(favg-savg))/common_tag; //quella di stamattina
-    //return Math.sqrt(distance(first, second, Double.POSITIVE_INFINITY));
+
   }
   
   /**
