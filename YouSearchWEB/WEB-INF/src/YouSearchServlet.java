@@ -61,7 +61,7 @@ public class YouSearchServlet extends HttpServlet{
         if(this.keyword.indexOf("=")!=-1)
         	this.clusterDetail = this.keyword.substring(this.keyword.indexOf("=")+1);
         
-        String htmlOutput = "<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">";
+        String htmlOutput = "";
         
         if(this.clusterDetail!=null){
         	this.keyword = this.keyword.substring(0,this.keyword.indexOf("="));
@@ -72,11 +72,11 @@ public class YouSearchServlet extends HttpServlet{
     	
     	if(ret != null)
     		for(int t=0;t < ret.getSize() && (t<150); t++)
-    			htmlOutput+= "<tr><td>"+this.builtVideoHtml(ret.getItem(t),t)+"</td></tr>";
+    			htmlOutput+= ""+this.builtVideoHtml(ret.getItem(t),t)+"";
     	else
     		htmlOutput += this.emptyResult();
     	
-		htmlOutput += "</table>";
+		htmlOutput += "";
 			//System.out.println(ret.getItem(t).getVideoId()+ " >> "+ret.getItem(t).getTags());
 		
 		out.print(htmlOutput);
@@ -95,31 +95,43 @@ public class YouSearchServlet extends HttpServlet{
     	String videoEntryUrl = "http://gdata.youtube.com/feeds/api/videos/"+entry.getVideoId();
     	//System.out.println(videoEntryUrl);
     	VideoEntry videoEntry;
-    	String retHtml = "";
+    	String retHtml = "\t<br /><br />\n";
+    	String globalOffset = (count!=0)?" style=\"position:relative; top:-"+(150*count)+"px\"":"";
 		try {
 			videoEntry = service.getEntry(new URL(videoEntryUrl), VideoEntry.class);
-			//out.println("titolo: "+videoEntry.getMediaGroup().getTitle().getPlainTextContent());
+			retHtml +="\t<div"+globalOffset+">\n";
 
-			String counter = "<b>"+(count+1)+"</b>";
-			String title = "<p class=\"video_title\">"+videoEntry.getMediaGroup().getTitle().getPlainTextContent();
-			title +="</p>";
+
+			String counter = "\t\t<p class=\"video_number\">"+(count+1)+"</p>\n";
+			String title = "\t\t<p class=\"video_title\">"+videoEntry.getMediaGroup().getTitle().getPlainTextContent();
+			title +="\t\t</p>\n";
 			
-			String img = "<p class=\"video_thumbs\">";			
+			String img = "\t\t<p class=\"video_thumbs\">\n";			
 			for(int i = 0; i<videoEntry.getMediaGroup().getThumbnails().size() && i<3; i++)
-				img +=" <img class=\"video_thumb\" src=\""+videoEntry.getMediaGroup().getThumbnails().get(i).getUrl()+"\" border=\"0\">";
-			img +="</p>";
+				img +="\t\t\t<img class=\"video_thumb\" src=\""+videoEntry.getMediaGroup().getThumbnails().get(i).getUrl()+"\" border=\"0\" />\n";
+			img +="\t\t</p>\n";
 			
-			String tags = "<p class=\"video_tags\">";
+			String tags = "\t\t<p class=\"video_tags\">\n";
 			String[] tgsArray = entry.getTags().split(" ");
-			for(int j = 0; j<tgsArray.length && j < 10;j++)
-				tags += "<a class=\"video_tag\" href=\"http://www.youtube.com/results?search_query="+tgsArray[j]+"\" title=\""+tgsArray[j]+"\" target=\"_blank\">"+tgsArray[j]+"</a>&nbsp;&nbsp;";
-			tags +="</p>";
+			String highlight_tag = "";
+			for(int j = 0; j<tgsArray.length && j < 10;j++){
+				highlight_tag = (j<3)?"style=\"font-size:16px\"":"";
+				if(j==3)
+					tags+="\t\t<br/>\n";
+				tags += "\t\t\t<a class=\"video_tag\" "+highlight_tag+" href=\"http://www.youtube.com/results?search_query="+tgsArray[j]+"\" title=\""+tgsArray[j]+"\" target=\"_blank\">"+tgsArray[j]+"</a>&nbsp;&nbsp;\n";
+			}
+			tags +="\t\t</p>\n";
 			
-			String inside = "<span class=\"video_inside\">";
-				inside +="<a href=\"/YouSearch/cluster/"+this.keyword+"="+((count+1))+"\"><img src=\"/YouSearch/images/more-movie.png\" width=\"28\" border=\"0\" />See inside this cluster</a>";
-				inside +="</span>"; 
-				
-			retHtml = counter + title + img + tags + inside;
+			String inside = "\t\t<span class=\"video_inside\">\n";
+				inside +="\t\t\t<a href=\"/YouSearch/cluster/"+this.keyword+"="+((count+1))+"\"><img src=\"/YouSearch/images/more-movie.png\" width=\"28\" border=\"0\" />See inside this cluster</a>\n";
+				inside +="\t\t</span>\n"; 
+			
+			inside =(this.clusterDetail != null)?"":inside;
+			
+			String video_break = "\t\t<span class=\"video_break\" style=\"\"></span>\n";
+			retHtml += counter + title + img + tags + inside + video_break;
+			retHtml +="\t</div>\n";	
+			
 			
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
