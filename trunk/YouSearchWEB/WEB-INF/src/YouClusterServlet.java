@@ -12,11 +12,12 @@ public class YouClusterServlet extends HttpServlet {
 
                 String[] path = request.getRequestURI().split("(/)");
                 
+                
                 if(path.length<4)
                 	return;
                 
                 String keyword = path[3];
-                
+                String server = request.getRemoteHost()+":8080";
                 // creare una paginetta che abbia un div centrale in cui viene rappresentato un loader
                 // possibilmente ajax che inizia la ricerca ecc e quando finisce mostra i risultati
                 // usare jQuery assolutamente
@@ -25,10 +26,8 @@ public class YouClusterServlet extends HttpServlet {
                 
                 String htmlPage = this.readFileAsString(this.getServletContext().getRealPath("/")+"/main.tpl");
                 htmlPage = htmlPage.replaceAll("KEYWORD",keyword);
-                
+                htmlPage = htmlPage.replaceAll("SERVER",server);
                 out.println(htmlPage);
-                
-   
                                 
         }// end doGet
         
