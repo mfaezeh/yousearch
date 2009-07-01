@@ -61,6 +61,7 @@ public class YouDTO2ARFF {
 	}
 
 	public String getARFF(){
+		System.out.println("getARFF");
 		return this.output;
 	}
 	public YouDTO2ARFF(YouSearchResult result) {
