@@ -1,0 +1,50 @@
+@relation tags
+
+@attribute similarity numeric
+@attribute sum numeric
+@attribute tags string
+@attribute video_id string
+
+@data
+
+
+2.202501775603623,11.012508878018114,"movie film record show motion","x7f80fuiB58"
+1.835429334264264,11.012576005585585,"movie action film drama cry effects","cXnw4FZlUxk"
+1.1223115623347544,5.611557811673772,"movie scene inedit funny unseen","XB0pGnzsAZI"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","7X8dsUGCUjQ"
+1.3662570626526203,10.930056501220962,"movie film part 2 horror number soap trailer scary","g_WCEGWngzE"
+1.3662570626526203,10.930056501220962,"movie film part 3 horror number soap trailer scary","edLB6YWZ-R4"
+1.3662570626526203,10.930056501220962,"movie film part 4 horror number soap trailer scary","KYBF3HKzrmE"
+1.3662570626526203,10.930056501220962,"movie film part 5 horror number soap trailer scary","n9vG2NzH3ZA"
+0.8346927107712864,5.842848975399004,"movie record actions hero war history nuclear","5BWcCbQM5-4"
+0.7704031341903398,6.163225073522718,"movie record documentary national geographic animal africa savana","l2EmUSsMZp4"
+0.739171704515169,5.913373636121352,"movie record sport athletics olimpic gold world winner","s5Lls3KDAVo"
+0.7401331899664129,5.921065519731303,"movie record family harry boy playing summer football","9QUT0tweX1M"
+0.7379655511664197,5.903724409331358,"movie record landscape sunrise seaside summer flying elicopter","6T79yApVCBg"
+0.7365061188245856,5.892048950596685,"movie show television comedy kids cartoon animation disney","ps67fzMNPtg"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","vngJ1pWXYnU"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","MuOvqeABHvQ"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","s7zoX9MGMbk"
+0.8217703950184737,5.752392765129316,"movie wall-e part 1 motion disney animation wall-e","ZtfhD70eaS4"
+0.8217703950184737,5.752392765129316,"movie wall-e part 2 motion disney animation wall-e","K0Xmp00KuNs"
+0.8217703950184737,5.752392765129316,"movie wall-e part 3 motion disney animation wall-e","hNjbx_-BtP8"
+0.8217703950184737,5.752392765129316,"movie wall-e part 4 motion disney animation wall-e","OhtGnCa8x2k"
+0.83534607971941,5.84742255803587,"movie record sport ferrari grand prix victories italy","uQWYamGsw2s"
+0.8354504449923075,5.848153114946152,"movie record sport ferrari grand prix victories france","pkqzFUhGPJg"
+0.83557442068779,5.84902094481453,"movie record sport ferrari grand prix victories germany","tWzGnFSgMAk"
+0.836106134291346,5.8527429400394215,"movie record sport ferrari grand prix victories england","24WzTkujaFRg"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","00YigewtZaQ"
+0.9549769935255665,5.729861961153399,"movie show animation fox simpsons unseen","jx2-IqN8rc4"
+0.9632800688434994,5.779680413060996,"movie show animation fox griffin unseen","z-FEUcHouA"
+1.810523747600473,10.863142485602838,"movie film animation fox CSI unseen","rBOfD2JBv0w"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","_PASzz1j3z0"
+2.202501775603623,11.012508878018114,"movie film record show motion","fb50GMmY5nk"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","UFpZ2mlR04I"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","sSh_Oc78A4o"
+2.202501775603623,11.012508878018114,"movie film record show motion","aqdAZE8gTjY"
+1.3662570626526203,10.930056501220962,"movie film part 1 horror number soap trailer scary","0UoSoaN8ljI"
+1.587745890866977,11.11422123606884,"movie motion film show record soap trailer","DOImN4Ayesw"
+0.9698495870889352,5.819097522533611,"movie motion keyframe realize rendering life","j2CiSF1_A2Y"
+0.7365061188245856,5.892048950596685,"movie show television comedy kids cartoon animation disney","K0qRhoc8WJ4"
+1.1634626203333034,5.817313101666517,"Collateral Full Movie Part motion","zEZuOJDrd6g"
+0.7446053546562574,5.9568428372500595,"movie show television comedy teenanger lizzy musical disney","SEKzcIOwcgc"
