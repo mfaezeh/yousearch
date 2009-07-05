@@ -6,11 +6,12 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.unsupervised.attribute.AddCluster;
+import weka.clusterers.XMeans;
 
 public class YouCluster {
 	private DataSource source;
-	//private XMeans clusterAgent;
-	private YouXMeans clusterAgent;	
+	private XMeans clusterAgent;
+	//private YouXMeans clusterAgent;	
 	private YouTagDistance tagDistance;
 	private Instances data;
 	private String keyword;
@@ -18,7 +19,7 @@ public class YouCluster {
 	
 	private void initCluster(){
 		
-		clusterAgent = new YouXMeans();
+		clusterAgent = new XMeans();
 		tagDistance = new YouTagDistance();
 		clusterAgent.setDistanceF(tagDistance);
 		clusterAgent.setMinNumClusters(2);
@@ -128,7 +129,7 @@ public class YouCluster {
 		 */
 		String[] options=null;
 		
-		new YouCluster("conv_dump_movie.arff",options);
+		new YouCluster("conv_dump_sint_movie.arff",options);
 	}
 
 }

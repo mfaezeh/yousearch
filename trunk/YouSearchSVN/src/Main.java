@@ -37,11 +37,11 @@ public class Main {
 				SimilarityMeasure simJCn = SimilarityMeasure.newInstance(params);
 				//Get two words from WordNet
 				Dictionary dict = Dictionary.getInstance();		
-				IndexWord word1 = dict.getIndexWord(POS.NOUN,"asdas");
-				IndexWord word2 = dict.getIndexWord(POS.NOUN,"adfff");
+				IndexWord word1 = dict.getIndexWord(POS.NOUN,"car");
+				IndexWord word2 = dict.getIndexWord(POS.NOUN,"crash");
 				
+				System.out.println(word1.getSense(1));
 				System.out.println(word2.getSense(1));
-				System.out.println(word2.getSense(1).toString());
 				
 				double sim = simJCn.getSimilarity(word1.getSense(1), word2.getSense(1));
 				System.out.println(sim);

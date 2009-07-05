@@ -136,11 +136,9 @@ public class YouXML2ARFF {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
-
+	
 	public static void main(String[] args) {
-		new YouXML2ARFF("dump_movie", "conv_dump_movie.arff");
+		new YouXML2ARFF("dump_sint_auto", "conv_dump_sint_auto.arff");
 	}
-
 }

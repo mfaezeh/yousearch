@@ -8,7 +8,7 @@ public class Finder {
 	public static void main(String[] args){
 		//setProxy();
 		YouSearch finder = new YouSearch();
-		finder.search("movie", true);
+		finder.search("auto", true);
 	}
 
 	public static void setProxy(){
