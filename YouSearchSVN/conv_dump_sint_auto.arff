@@ -1,0 +1,56 @@
+@relation tags
+
+@attribute similarity numeric
+@attribute sum numeric
+@attribute tags string
+@attribute video_id string
+
+@data
+
+
+4.247281481880726,21.23640740940363,"auto car automobile machine motorcar","zGleo9EgCYc"
+1.9512434774406786,21.463678251847465,"auto car automobile machine motorcar motor mercedes suv sport utility vagon","tppGRyf9q2M"
+2.145889588145655,21.45889588145655,"auto car automobile machine motorcar motor Golf diesel 180 CV 300 MPh","ea0wO34pBQg"
+2.1523495666043324,21.523495666043324,"car automobile machine motorcar motor mercedes Tokio auto saloon luxury","NncmILE_7mQ"
+2.3912322322718493,21.521090090446645,"car automobile machine motorcar motor Tokio auto saloon hybrid","wguFY0DDoAU"
+2.3779830855434003,21.401847769890605,"car automobile machine motorcar motor Paris auto mini ecologic","3x669iPqhNc"
+1.8087555491363794,21.70506658963655,"auto car automobile machine motorcar motor Motor Paris saloon alfa romeo sport","lU89JpVmtwk"
+1.7923956795453693,21.50874815454443,"auto car automobile machine motorcar motor Motor Ginevre saloom aston martin xtype2000","tKNeOttyAsk"
+1.9666355498449553,21.632991048294507,"auto car automobile machine motorcar motor Motor Milan saloom fiat sport","kysUIoPT1D8"
+1.8016050386396423,21.619260463675708,"auto car automobile machine motorcar motor Motor Boston Chrisler dodge viper turbo","mjMIXxMw-Ds"
+2.291637946626633,16.04146562638643,"auto automobile car city yaris navi test","lccJ0dTy25M"
+2.3003584171169966,16.102508919818977,"auto automobile car city citroen compact funny","wEIhXPK0TSM"
+2.291637946626633,16.04146562638643,"auto automobile car city yaris navi test","fSFjhWw4DNo"
+2.0124200469631637,16.09936037570531,"auto automobile car city fiat panda coupè full optional","LkGAtHVWzQg"
+2.6718880601646067,16.03132836098764,"auto automobile car city yaris luna","_de3HJvO-N8"
+2.673814012469258,16.04288407481555,"auto automobile car city ecologic comparison","B-kl93Husv0"
+3.1799999999999997,15.899999999999999,"auto automobile car newest models","hEK7POxpVeE"
+2.6707327351585164,16.0243964109511,"auto automobile car video chevrolet xxx","_D-LmRNdQiQ"
+2.65,15.899999999999999,"auto automobile car ferrari max-speed powerful","fUvwIjMEEHs"
+2.662513209419067,15.975079256514404,"auto automobile car oldest american glories","z2c2XblYcOc"
+3.20883536984201,16.04417684921005,"auto automobile car city fiat","bRsbOTEIcrc"
+2.2911879333345655,16.038315533341958,"auto automobile car funny crash city metropoly","lhQW95d-sEw"
+2.018726862656705,16.14981490125364,"auto automobile car city smart reduce test stability","X4CHEfWxnnM"
+2.291637946626633,16.04146562638643,"auto automobile car city yaris navi test","X2XANYfl5T8"
+0.8254065166354987,5.777845616448491,"auto motor bologna show valentino rossi rally","rmIVSny4e2g"
+0.9555427888125178,5.733256732875106,"auto motor Paris show girls hot","GGwgU7Oti0A"
+0.9539877945954064,5.723926767572438,"auto motor bologna show ferrari f2009ag","X_FT_kc0wyY"
+0.9539877945954064,5.723926767572438,"auto motor bologna show hot girls","75NUD5jRmko"
+0.9723855981723722,5.834313589034234,"auto motor bologna show tuning video","nOUgGA0lsog"
+1.1331318084989508,5.665659042494754,"auto motor ecologic diesel pure","7AQmgeMoM0A"
+0.9507847573545002,5.704708544127001,"auto motor turbo 350cv ferrari engine","rXIBR2VMXW4"
+1.134704838154513,5.673524190772565,"auto motor megazine sport shows","BFhS5F7ubJs"
+0.9540958376461727,5.724575025877036,"auto motor tuning sport bmw part 1","WoZQD4djwW0"
+0.9540958376461727,5.724575025877036,"auto motor tuning sport bmw part 2","_r64LzGcmrg"
+0.9540958376461727,5.724575025877036,"auto motor tuning sport bmw part 3","KT6FST2CPt0"
+1.134412090962261,5.672060454811305,"auto clean windows utility comparison","Bfiuv8HbByw"
+2.163337599597761,10.816687997988804,"auto drawing automobile illustrator vectors","pnfApLn039E"
+1.1399364158249203,5.699682079124602,"auto show saloon girls Paris","eUBuU0v3iSU"
+0.9466334211072565,5.679800526643539,"auto mitsubishi celica rally word championship","YWeZyHdgLHM"
+0.8143712289277596,5.700598602494317,"auto tuning sport flap lights subaru impreza","xrdLtIgwHzM"
+1.1567955913640426,5.783977956820213,"auto airbag safe test quality","E23BgGp_eHQ"
+0.9549946856445559,5.7299681138673355,"auto test crash high speed airbag","TrKKDGxg-Ag"
+0.9618852043080635,5.771311225848381,"auto filter windows mac compare firewall","JP6gwPF-XqI"
+1.1375975031232433,5.687987515616216,"auto crash grand-prix mortal tragic","dN3nSuvUM0Q"
+1.4043385875636718,5.617354350254687,"auto marge backups oracle","gwXwT_MI2jI"
+1.4013138063192356,5.6052552252769425,"auto save tutorial photoshop","03w_R-O-v58"
