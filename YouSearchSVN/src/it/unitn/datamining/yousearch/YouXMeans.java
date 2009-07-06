@@ -48,9 +48,9 @@ import weka.filters.unsupervised.attribute.ReplaceMissingValues;
 /**
  * <!-- globalinfo-start --> Cluster data using the YouX-means algorithm.<br/>
  * <br/>
- * YouX-Means is K-Means extended by an Improve-Structure part In this part of the
- * algorithm the centers are attempted to be split in its region. The decision
- * between the children of each center and itself is done comparing the
+ * YouX-Means is K-Means extended by an Improve-Structure part In this part of
+ * the algorithm the centers are attempted to be split in its region. The
+ * decision between the children of each center and itself is done comparing the
  * BIC-values of the two structures.<br/>
  * <br/>
  * For more information see:<br/>
@@ -180,8 +180,7 @@ import weka.filters.unsupervised.attribute.ReplaceMissingValues;
  * @version $Revision: 1.24 $
  * @see RandomizableClusterer
  */
-public class YouXMeans extends XMeans implements
-		TechnicalInformationHandler {
+public class YouXMeans extends XMeans implements TechnicalInformationHandler {
 
 	/*
 	 * major TODOS:
@@ -192,7 +191,6 @@ public class YouXMeans extends XMeans implements
 	/** for serialization. */
 	private static final long serialVersionUID = -7941793078404132616L;
 
-	
 	/**
 	 * the default constructor.
 	 */
@@ -256,7 +254,7 @@ public class YouXMeans extends XMeans implements
 		// can clusterer handle the data?
 		// getCapabilities().testWithFail(data);
 
-		//System.out.println("FIRST: " + data.instance(2).stringValue(3));
+		// System.out.println("FIRST: " + data.instance(2).stringValue(3));
 
 		m_NumSplits = 0;
 		m_NumSplitsDone = 0;
@@ -427,7 +425,7 @@ public class YouXMeans extends XMeans implements
 				// initialize assignments to -1
 				int[] oneCentAssignments = initAssignments(currNumInst);
 				int[][] instOfChCent = new int[2][]; // todo maybe split didn't
-														// work
+				// work
 
 				// converge the children --------------------------------------
 				converged = false;
@@ -524,10 +522,13 @@ public class YouXMeans extends XMeans implements
 	public boolean checkForNominalAttributes(Instances data) {
 
 		int i = 0;
-		
-		  while (i < data.numAttributes()) { if ((i != data.classIndex()) &&
-		  data.attribute(i++).isNominal()) { return true; } }
-		 
+
+		while (i < data.numAttributes()) {
+			if ((i != data.classIndex()) && data.attribute(i++).isNominal()) {
+				return true;
+			}
+		}
+
 		return false;
 	}
 
@@ -896,7 +897,7 @@ public class YouXMeans extends XMeans implements
 		temp.append("------\n");
 		temp.append("\nCluster centers                 : " + m_NumClusters
 				+ " centers\n");
-		
+
 		for (int i = 0; i < m_NumClusters; i++) {
 			temp.append("\nCluster " + i + "\n           ");
 			for (int j = 0; j < m_ClusterCenters.numAttributes(); j++) {
@@ -907,8 +908,7 @@ public class YouXMeans extends XMeans implements
 											(int) m_ClusterCenters.instance(i)
 													.value(j)));
 				} else {
-					temp.append(" "
-							+ m_ClusterCenters.instance(i).value(j));
+					temp.append(" " + m_ClusterCenters.instance(i).value(j));
 				}
 			}
 		}
@@ -916,7 +916,9 @@ public class YouXMeans extends XMeans implements
 			temp.append("\n\nDistortion: "
 					+ Utils.doubleToString(Utils.sum(m_Mle), 6) + "\n");
 		temp.append("BIC-Value : " + Utils.doubleToString(m_Bic, 6) + "\n");
-		temp.append("Number of instances: "+m_Instances.numInstances()+"\n");
+		temp
+				.append("Number of instances: " + m_Instances.numInstances()
+						+ "\n");
 		return temp.toString();
 	}
 
@@ -938,25 +940,26 @@ public class YouXMeans extends XMeans implements
 	public static void main(String[] argv) {
 		runClusterer(new YouXMeans(), argv);
 	}
-	
-	public Instances getNearestFromCentroids(){
+
+	public Instances getNearestFromCentroids() {
 		Instances retInst = new Instances(m_Instances, 0);
-		
-		for(int i = 0; i <this.m_ClusterCenters.numInstances(); i++){
+
+		for (int i = 0; i < this.m_ClusterCenters.numInstances(); i++) {
 			double minDist = Double.MAX_VALUE;
 			double currDist = Double.MAX_VALUE;
 			int minInstance = 0;
-	
-			for(int j = 0; j< this.m_Instances.numInstances(); j++){
-				currDist = this.m_DistanceF.distance(this.m_ClusterCenters.instance(i), this.m_Instances.instance(j));
-				
-				if(currDist < minDist){
+
+			for (int j = 0; j < this.m_Instances.numInstances(); j++) {
+				currDist = this.m_DistanceF.distance(this.m_ClusterCenters
+						.instance(i), this.m_Instances.instance(j));
+
+				if (currDist < minDist) {
 					minInstance = j;
 					minDist = currDist;
 				}
-				
+
 			}
-				retInst.add(this.m_Instances.instance(minInstance));				
+			retInst.add(this.m_Instances.instance(minInstance));
 		}
 		return retInst;
 	}

@@ -31,12 +31,13 @@ public class YouSearch {
 
 	private boolean needDump = false;
 
-	public static YouSearch getInstance(){
-		if(instance == null)
+	public static YouSearch getInstance() {
+		if (instance == null)
 			instance = new YouSearch();
-		
+
 		return instance;
 	}
+
 	public void search(String keyword, boolean dumpFile) {
 		this.keyword = keyword;
 		this.filterTag = new CategoryFilter(new Category(keyword));
@@ -50,7 +51,7 @@ public class YouSearch {
 				e1.printStackTrace();
 			}
 		}
-		
+
 		this.service = new YouTubeService(
 				"ytapi-AlessandroScipio-DataMiningTest01-im13a1kh-0",
 				"AI39si7hFFsKY44Z_zrZ27F73VPrKDMOqX4fv5ARhY4Mksq-B48x8GhHh9ONuubRThmpApT9mfgce9PmXv1UMDdkkDLsyO_AlQ");
@@ -72,9 +73,10 @@ public class YouSearch {
 		}
 	}
 
-	public YouTubeService getYouTubeService(){
+	public YouTubeService getYouTubeService() {
 		return this.service;
 	}
+
 	private void searchByKeyword() throws MalformedURLException {
 		this.resultDTO = new YouSearchResult(this.keyword);
 		// search for puppies and include restricted content in the search
@@ -87,30 +89,34 @@ public class YouSearch {
 
 		System.out.println(query.getFeedUrl() + query.getQueryUri().toString()
 				+ "\n");
-		try {			
-			if(this.needDump)
-				this.wrt.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result id=\"result\" keyword=\""+ this.keyword + "\">\n");
-			
+		try {
+			if (this.needDump)
+				this.wrt
+						.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result id=\"result\" keyword=\""
+								+ this.keyword + "\">\n");
+
 			for (int i = 1; i <= this.maxTotPageRes; i++) {
 				this.currPage = i;
 				this.query.setMaxResults(this.maxResPerPage);
-				this.query.setStartIndex((this.maxResPerPage * this.currPage-50)+1);
+				this.query
+						.setStartIndex((this.maxResPerPage * this.currPage - 50) + 1);
 				try {
 					videoCurrent = service.getFeed(query, VideoFeed.class);
-				} catch (ServiceException sEx) {}
-				
-				if(this.needDump)
+				} catch (ServiceException sEx) {
+				}
+
+				if (this.needDump)
 					this.dumpToFile(videoCurrent);
-				
+
 				this.appendResult(videoCurrent);
-				
+
 				System.out.println("PageCount: " + i + " resPerPage: "
 						+ this.maxResPerPage + " URI: "
 						+ query.getQueryUri().toString());
 				Thread.sleep(10);
 			}
-			
-			if(this.needDump){
+
+			if (this.needDump) {
 				this.wrt.write("</result>");
 				this.wrt.close();
 			}
@@ -121,32 +127,34 @@ public class YouSearch {
 			// e.printStackTrace();
 		}
 	}
-	
-	public YouSearchResult getResult(){
+
+	public YouSearchResult getResult() {
 		System.out.println(this.resultDTO.getResult().toString());
 		return this.resultDTO;
 	}
 
-	private void appendResult(VideoFeed videoFeed) {	
-		List<String> videoKeywords;	
+	private void appendResult(VideoFeed videoFeed) {
+		List<String> videoKeywords;
 		List<VideoEntry> x = videoFeed.getEntries();
-		
+
 		for (int i = 0; i < x.size(); i++) {
 			String tmpTag = new String();
 			YouSearchEntry newItem = new YouSearchEntry();
-			videoKeywords = x.get(i).getMediaGroup().getKeywords().getKeywords();
-			newItem.setTitle(x.get(i).getTitle().getPlainText().replaceAll("&","&amp;"));
+			videoKeywords = x.get(i).getMediaGroup().getKeywords()
+					.getKeywords();
+			newItem.setTitle(x.get(i).getTitle().getPlainText().replaceAll("&",
+					"&amp;"));
 			newItem.setVideoId(x.get(i).getMediaGroup().getVideoId());
-			
-			for (int j = 0; j < videoKeywords.size(); j++) 
-				tmpTag +=" "+ videoKeywords.get(j).replaceAll("&", "&amp;");
-			
+
+			for (int j = 0; j < videoKeywords.size(); j++)
+				tmpTag += " " + videoKeywords.get(j).replaceAll("&", "&amp;");
+
 			newItem.setTags(tmpTag);
-			
+
 			this.resultDTO.addItem(newItem);
 		}
 	}
-	
+
 	private void dumpToFile(VideoFeed videoFeed) {
 		String toFile = "";
 		List<String> videoKeywords;
@@ -166,8 +174,8 @@ public class YouSearch {
 			for (int j = 0; j < videoKeywords.size(); j++) {
 				String tmpTag = videoKeywords.get(j).replaceAll("&", "&amp;");
 				String[] tmpTagArr = tmpTag.split(" ");
-				for(int k=0; k< tmpTagArr.length; k++)
-					toFile += "\t\t\t<key>"	+ tmpTagArr[k]	+ "</key>\n";
+				for (int k = 0; k < tmpTagArr.length; k++)
+					toFile += "\t\t\t<key>" + tmpTagArr[k] + "</key>\n";
 			}
 
 			toFile += "\t\t</keywords>\n";

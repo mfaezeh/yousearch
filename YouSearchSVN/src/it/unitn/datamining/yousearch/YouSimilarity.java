@@ -12,7 +12,6 @@ import net.didion.jwnl.data.POS;
 import net.didion.jwnl.dictionary.Dictionary;
 import shef.nlp.wordnet.similarity.SimilarityMeasure;
 
-
 public class YouSimilarity {
 	private static YouSimilarity instance = null;
 	private SimilarityMeasure measure = null;
@@ -24,7 +23,7 @@ public class YouSimilarity {
 			instance = new YouSimilarity();
 		return instance;
 	}
-	
+
 	private void init() {
 		try {
 			JWNL.initialize(new FileInputStream("wn-config.xml"));
@@ -45,36 +44,37 @@ public class YouSimilarity {
 		params.put("infocontent", "file:ic-bnc-resnik-add1.dat");
 		try {
 			measure = SimilarityMeasure.newInstance(params);
-			dict = Dictionary.getInstance();			
+			dict = Dictionary.getInstance();
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-	
+
 	public double getSimilarity(String word1, String word2) {
 
 		double retSim = 0.0;
 		IndexWord wordsense1 = null;
-		IndexWord wordsense2 = null;		
+		IndexWord wordsense2 = null;
 
 		if (!initialization)
 			init();
-		
+
 		initialization = true;
-		
+
 		try {
-			
+
 			wordsense1 = dict.getIndexWord(POS.NOUN, word1);
 			wordsense2 = dict.getIndexWord(POS.NOUN, word2);
-			if((wordsense1 != null) && (wordsense2 != null))
-				retSim = measure.getSimilarity(wordsense1.getSense(1), wordsense2.getSense(1));
-			
+			if ((wordsense1 != null) && (wordsense2 != null))
+				retSim = measure.getSimilarity(wordsense1.getSense(1),
+						wordsense2.getSense(1));
+
 		} catch (JWNLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return retSim;
-	}	
+	}
 }

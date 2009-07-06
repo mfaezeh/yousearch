@@ -8,22 +8,23 @@ public class YouDTO2ARFF {
 
 	private void initARFF() {
 		System.out.println("initARFF");
-		if(this.result == null)
+		if (this.result == null)
 			System.exit(0);
-		
+
 		this.output = new String();
 
-		this.output+="@relation tags\n\n";
-		this.output+="@attribute similarity numeric\n";
-		this.output+="@attribute sum numeric\n";
-		this.output+="@attribute tags string\n";
-		this.output+="@attribute video_id string\n\n";
-		this.output+="@data\n\n";
+		this.output += "@relation tags\n\n";
+		this.output += "@attribute similarity numeric\n";
+		this.output += "@attribute sum numeric\n";
+		this.output += "@attribute tags string\n";
+		this.output += "@attribute video_id string\n\n";
+		this.output += "@data\n\n";
 
 	}
 
 	private void doConversion() {
-		this.similarityAgent = new YouTagGroupSimilarity(this.result.getKeyword());
+		this.similarityAgent = new YouTagGroupSimilarity(this.result
+				.getKeyword());
 		// this.stemmer = new SnowballStemmer();
 		this.tagValidator = new YouTagValidator();
 
@@ -40,8 +41,9 @@ public class YouDTO2ARFF {
 				if (this.tagValidator.isValid(unfilteredTag[j]))
 					filteredTag += " " + unfilteredTag[j];
 
-			//similarityDTO = new YouSimilarityDTO();
-			similarityDTO = this.similarityAgent.getSimilarity(filteredTag.split(" "), tmpEntry.getVideoId());
+			// similarityDTO = new YouSimilarityDTO();
+			similarityDTO = this.similarityAgent.getSimilarity(filteredTag
+					.split(" "), tmpEntry.getVideoId());
 			// System.out.println(arrayTag.size());
 			appendToOutput(filteredTag.split(" "), similarityDTO);
 		}
@@ -54,15 +56,16 @@ public class YouDTO2ARFF {
 		for (int i = 0; i < tags.length; i++)
 			toFile += tags[i].toString() + " ";
 
-		this.output+="\n" + String.valueOf(value.similarity) + ","
+		this.output += "\n" + String.valueOf(value.similarity) + ","
 				+ String.valueOf(value.sum) + "," + "\"" + toFile.trim() + "\""
 				+ "," + "\"" + String.valueOf(value.videoId) + "\"";
 
 	}
 
-	public String getARFF(){
+	public String getARFF() {
 		return this.output;
 	}
+
 	public YouDTO2ARFF(YouSearchResult result) {
 		this.result = result;
 		initARFF();
