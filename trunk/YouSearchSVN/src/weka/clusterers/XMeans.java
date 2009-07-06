@@ -592,7 +592,7 @@ public class XMeans extends RandomizableClusterer implements
 				// initialize assignments to -1
 				int[] oneCentAssignments = initAssignments(currNumInst);
 				int[][] instOfChCent = new int[2][]; // todo maybe split didn't
-														// work
+				// work
 
 				// converge the children --------------------------------------
 				converged = false;
@@ -1588,7 +1588,8 @@ public class XMeans extends RandomizableClusterer implements
 						+ "\tthe Improve-Parameter part \n"
 						+ "\t(default 1000).", "M", 1, "-M <num>"));
 
-		result.addElement(new Option(
+		result
+				.addElement(new Option(
 						"\tmaximum number of iterations in the kMeans loop\n"
 								+ "\tfor the splitted centroids in the Improve-Structure part \n"
 								+ "\t(default 1000).", "J", 1, "-J <num>"));
