@@ -1,0 +1,24 @@
+README FILE
+
+INSTALLATION:
+
+This project is suitable with the commons IDE for Java programming. But for this guide we assume to use Eclipse.
+- Open Eclipse
+- Create new Java Project
+- Check "Existing Project" and choose this folder
+- Edit build path and choose all the jar(s) into the directory "libs" inside this folder
+- Be sure that all the files in this directory are well duplicated into your project. If none, copy and past it manually.
+
+RUNNING:
+
+YouSearch is divided into 3 step: Retriving, Converting and Clustering.
+
+	-	Retriving : this step create an the dump XML file of your search. 
+		To perform the search open the file Finder.java and run (take a look to the input keyword). It creates automatically the output file "dump_"+keyword.
+
+	-	Converting : this step edit the dump file from XML to ARFF and calculates the similarity.
+		To perform the manipulation open the file XMLtoARFF.java and run (take a look to the input file). It creates automatically the output file within the name given as input.
+
+	-	Clustering : this step perform the cluster algorithm.
+		To perform the clustering open the file Main.java and run (take a look to the input file). It shows in the java console the results.
+

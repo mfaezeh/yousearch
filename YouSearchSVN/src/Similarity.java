@@ -8,10 +8,13 @@ import net.didion.jwnl.JWNLException;
 import net.didion.jwnl.data.IndexWord;
 import net.didion.jwnl.data.POS;
 import net.didion.jwnl.dictionary.Dictionary;
-
 import shef.nlp.wordnet.similarity.SimilarityMeasure;
 
-
+/**
+ * This is a test class
+ * @author alessandro
+ *
+ */
 public class Similarity {
 
 		public static void main(String[] args){	
