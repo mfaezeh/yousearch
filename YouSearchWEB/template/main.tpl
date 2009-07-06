@@ -128,7 +128,7 @@ a:hover {
 
 <div class="search_box_top">
 	<div class="search_box_path"><a href="http://www.youtube.com">YouTube</a> / <a href="http://SERVER/YouSearch/">YouSearch</a> / <a href="http://SERVER/YouSearch/cluster/KEYWORD">KEYWORD</a> / <span style="color:yellow">clusters</span></div>
-	<span class="search_box_form"><form action="http://SERVER/YouSearch/"><input id="input_search" type="text" size="50"><input  type="button" value="Submit" onclick="resolveQuery()"></form></span>
+	<span class="search_box_form"><form action="http://SERVER/YouSearch/" onsubmit="resolveQuery(); return false;"><input id="input_search" type="text" size="50"><input  type="button" value="Submit" onclick="resolveQuery()"></form></span>
 </div>
 
 <div id="search_box">
@@ -136,7 +136,9 @@ a:hover {
 		$(document).ready(function() {
 		var timerId;
 		var progressBarValue = 0;
-		$("#searchbar").progressBar(0,{ barImage: '/YouSearch/images/progressbg_green.gif'} );
+		var counts = 0;
+		var loading = ["Clustering ","Clustering .","Clustering ..","Clustering ..."];
+		$("#searchbar").progressBar(0,{ showText:false, barImage: '/YouSearch/images/progressbg_green.gif'} );
 		$.get("http://SERVER/YouSearch/search/KEYWORD",{},
 						function(data){
 								clearInterval(timerId);
@@ -146,7 +148,12 @@ a:hover {
 								$("#result_box").attr( "align", "left" );
 								$('#result_box').show();
 					});
-				timerId = setInterval(function(){$("#searchbar").progressBar((progressBarValue++)%100)},500);
+				
+				timerId = setInterval(
+						function(){
+							$("#searchbar").progressBar((progressBarValue++)%100,{showText: false})
+							$("#searchtext").html(loading[counts++%4]);
+						},500);
 				
 		});							
 	</script>
@@ -154,7 +161,9 @@ a:hover {
 
 <div id="result_box" class="result_box" align="center">
 Searching...
-<span class="progressbar" id="searchbar" style="position:relative; top:200px;">0%</span>	
+<div align="left" class="progressbar" id="searchbar" style="width:100px;position:relative; top:200px;"></div><br/>
+<div align="left" id="searchtext" style="width:100px;font-weight:bold; position:relative; top:200px;"></div>
+
 </div>
 
 <div class="video_copy_box" align="center">
