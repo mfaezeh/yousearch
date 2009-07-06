@@ -129,7 +129,7 @@ a:hover {
 
 <div id="result_box" class="result_box" align="center">
 <img src="/YouSearch/images/YouSearch_logo.png" width="20%" border="0" style="position:relative; top:-50px;"/>
-	<form action="YouSearch/cluster/" >
+	<form action="YouSearch/cluster/" onsubmit="resolveQuery(); return false;">
 		<input id="input_search" type="text" size="50">
 		<input  type="button" value="Submit" onclick="resolveQuery()">
 	</form>
