@@ -22,8 +22,11 @@
 
 package weka.filters.unsupervised.attribute;
 
-import weka.clusterers.Clusterer;
+import java.util.Enumeration;
+import java.util.Vector;
+
 import weka.clusterers.AbstractClusterer;
+import weka.clusterers.Clusterer;
 import weka.core.Attribute;
 import weka.core.Capabilities;
 import weka.core.FastVector;
@@ -37,9 +40,6 @@ import weka.core.SparseInstance;
 import weka.core.Utils;
 import weka.filters.Filter;
 import weka.filters.UnsupervisedFilter;
-
-import java.util.Enumeration;
-import java.util.Vector;
 
 /** 
  <!-- globalinfo-start -->

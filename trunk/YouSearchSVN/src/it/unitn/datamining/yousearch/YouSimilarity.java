@@ -5,17 +5,15 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
 
-import shef.nlp.wordnet.similarity.SimilarityMeasure;
-
 import net.didion.jwnl.JWNL;
 import net.didion.jwnl.JWNLException;
 import net.didion.jwnl.data.IndexWord;
 import net.didion.jwnl.data.POS;
 import net.didion.jwnl.dictionary.Dictionary;
+import shef.nlp.wordnet.similarity.SimilarityMeasure;
 
 
 public class YouSimilarity {
-
 	private static YouSimilarity instance = null;
 	private SimilarityMeasure measure = null;
 	private boolean initialization = false;

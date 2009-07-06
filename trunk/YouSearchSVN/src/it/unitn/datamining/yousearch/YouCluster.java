@@ -2,11 +2,11 @@ package it.unitn.datamining.yousearch;
 
 import java.io.ByteArrayInputStream;
 
+import weka.clusterers.XMeans;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.unsupervised.attribute.AddCluster;
-import weka.clusterers.XMeans;
 
 public class YouCluster {
 	private DataSource source;
@@ -122,11 +122,4 @@ public class YouCluster {
 		}
 		return retVal;		
 	}
-	public static void main(String[] args){
-
-		String[] options=null;
-		
-		new YouCluster("conv_dump_sint_movie.arff",options);
-	}
-
 }

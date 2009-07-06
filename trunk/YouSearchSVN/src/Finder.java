@@ -8,6 +8,7 @@ public class Finder {
 	public static void main(String[] args){
 		//setProxy();
 		YouSearch finder = new YouSearch();
+		// enter the keyword
 		finder.search("auto", true);
 	}
 
