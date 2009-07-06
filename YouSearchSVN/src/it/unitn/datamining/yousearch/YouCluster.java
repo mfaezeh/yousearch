@@ -123,10 +123,7 @@ public class YouCluster {
 		return retVal;		
 	}
 	public static void main(String[] args){
-		/* PROBLEMI NOTI: l'algoritmo XMeans modifica i volori durante il calcolo
-		 * Durante lo splitCenter la funzione richiede valori double (potrebbe essere il valore di similitudine)
-		 * Bisogna riscrivere la funzione splitCenter in modo che tenga conto anche dei tags
-		 */
+
 		String[] options=null;
 		
 		new YouCluster("conv_dump_sint_movie.arff",options);
